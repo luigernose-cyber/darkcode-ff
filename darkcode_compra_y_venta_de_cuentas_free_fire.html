@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARKCODE | Compra y Venta de Cuentas Free Fire</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter, Orbitron & Rajdhani para estética gamer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        gamer: ['Orbitron', 'sans-serif'],
+                        tech: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        ffdark: '#07090e',
+                        ffcard: '#101521',
+                        ffsurface: '#161d2e',
+                        ffcyan: '#00f0ff',
+                        ffgold: '#ffaa00',
+                        fforange: '#ff5500',
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 20px rgba(0, 240, 255, 0.35)',
+                        'neon-gold': '0 0 20px rgba(255, 170, 0, 0.35)',
+                        'neon-emerald': '0 0 20px rgba(16, 185, 129, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ffdark text-gray-100 font-sans antialiased selection:bg-ffcyan selection:text-ffdark overflow-x-hidden">
+
+    <!-- Navbar / Encabezado -->
+    <header class="sticky top-0 z-40 bg-ffdark/90 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo DARKCODE (Calavera minimalista coronada en círculo) -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#f8f6f0] to-[#e6e2d6] border-2 border-ffcyan/60 flex items-center justify-center text-[#12161d] shadow-neon-cyan group-hover:scale-105 transition-transform p-1">
+                        <svg viewBox="0 0 120 120" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Darkcode">
+                            <!-- Círculo exterior grueso -->
+                            <circle cx="60" cy="60" r="51" stroke="currentColor" stroke-width="6.5"/>
+                            <!-- Corona de 3 picos sobre la cabeza -->
+                            <path d="M44 33 L40 21 L51 26.5 L60 16.5 L69 26.5 L80 21 L76 33 Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <!-- Silueta principal de calavera con pómulos y mandíbula -->
+                            <path d="M60 31.5C41.5 31.5 31 43.5 31 58.5C31 66.2 34.2 71.5 38.8 74.5C39.8 75.2 40.5 76.2 40.5 77.5V86.5C40.5 91.5 44.5 95 49.5 95H70.5C75.5 95 79.5 91.5 79.5 86.5V77.5C79.5 76.2 80.2 75.2 81.2 74.5C85.8 71.5 89 66.2 89 58.5C89 43.5 78.5 31.5 60 31.5Z" stroke="currentColor" stroke-width="6.2" stroke-linejoin="round"/>
+                            <!-- Destello curvo en la parte superior izquierda del cráneo -->
+                            <path d="M40.5 47.5C43 42.2 48.2 38.8 54.5 38.2" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/>
+                            <!-- Ojos ovalados inclinados -->
+                            <ellipse cx="47.2" cy="63" rx="6.2" ry="7.2" transform="rotate(-10 47.2 63)" fill="currentColor"/>
+                            <ellipse cx="72.8" cy="63" rx="6.2" ry="7.2" transform="rotate(10 72.8 63)" fill="currentColor"/>
+                            <!-- Nariz triangular redondeada -->
+                            <path d="M60 69.5C58.6 69.5 55.5 75.2 55.8 76.8C56.1 78.2 58.5 77.6 60 77.6C61.5 77.6 63.9 78.2 64.2 76.8C64.5 75.2 61.4 69.5 60 69.5Z" fill="currentColor"/>
+                            <!-- Dientes verticales inferiores -->
+                            <path d="M49.5 86.5V94.5M60 86.5V94.5M70.5 86.5V94.5" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-gamer font-extrabold text-xl sm:text-2xl tracking-wider text-white">DARK<span class="text-ffcyan">CODE</span></span>
+                        <span class="block text-[10px] font-tech uppercase tracking-[0.2em] text-ffgold font-bold -mt-0.5">Booyah Market Oficial</span>
+                    </div>
+                </a>
+
+                <!-- Navegación Desktop -->
+                <nav class="hidden xl:flex items-center gap-6">
+                    <a href="#catalogo" class="text-sm font-semibold text-gray-300 hover:text-ffcyan transition-colors">Catálogo</a>
+                    <a href="#como-funciona" class="text-sm font-semibold text-gray-300 hover:text-ffcyan transition-colors">¿Cómo funciona?</a>
+                </nav>
+
+                <!-- Botones de Acción -->
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                    <!-- Botón Publicar Cuenta (Comunidad $2) -->
+                    <button type="button" onclick="openPublishModal(false)" 
+                            class="flex items-center gap-2 bg-gradient-to-r from-ffgold to-fforange hover:brightness-110 text-ffdark px-3 sm:px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-neon-gold">
+                        <i class="fa-solid fa-plus-circle"></i>
+                        <span>Publicar ($2)</span>
+                    </button>
+
+                    <!-- Selector Rápido WhatsApp Navbar -->
+                    <div class="relative" id="nav-wa-container">
+                        <button type="button" onclick="toggleNavWaMenu()" 
+                                class="flex items-center gap-2 bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-ffdark border border-emerald-500/50 px-3 sm:px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span class="hidden sm:inline">WhatsApp Oficial</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+
+                        <div id="nav-wa-dropdown" class="hidden absolute right-0 mt-2 w-64 bg-ffcard border border-emerald-500/40 rounded-2xl shadow-2xl p-2 z-50">
+                            <div class="px-3 py-1.5 border-b border-gray-800 mb-1">
+                                <span class="block text-[10px] font-tech uppercase tracking-widest text-emerald-400 font-bold">Elige un Asesor Oficial</span>
+                            </div>
+                            <a href="https://wa.me/584125598221?text=Hola%20Asesor%201%20de%20DARKCODE%2C%20quisiera%20hablar%20personalmente%20contigo%20sobre%20las%20cuentas%20de%20Free%20Fire." 
+                               target="_blank" rel="noopener noreferrer"
+                               class="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-emerald-500/15 text-gray-200 hover:text-white transition-colors">
+                                <div>
+                                    <span class="block text-xs font-bold text-emerald-400">Línea 1 • Asesor Principal</span>
+                                    <span class="text-xs font-mono text-gray-300">+58 0412-5598221</span>
+                                </div>
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                            </a>
+                            <a href="https://wa.me/584161591048?text=Hola%20Asesor%202%20de%20DARKCODE%2C%20quisiera%20hablar%20personalmente%20contigo%20sobre%20las%20cuentas%20de%20Free%20Fire." 
+                               target="_blank" rel="noopener noreferrer"
+                               class="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-emerald-500/15 text-gray-200 hover:text-white transition-colors mt-1">
+                                <div>
+                                    <span class="block text-xs font-bold text-ffcyan">Línea 2 • Asesor Secundario</span>
+                                    <span class="text-xs font-mono text-gray-300">+58 416-1591048</span>
+                                </div>
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Cinematográfico -->
+    <section class="relative pt-12 pb-16 lg:pt-20 lg:pb-20 overflow-hidden border-b border-gray-800/80">
+        <!-- Resplandores de fondo neón -->
+        <div class="absolute -top-24 left-1/4 w-[28rem] h-[28rem] bg-ffcyan/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute -bottom-24 right-1/4 w-[28rem] h-[28rem] bg-ffgold/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ffcard/90 border border-ffcyan/40 text-ffcyan text-xs font-tech font-bold uppercase tracking-widest mb-6 shadow-neon-cyan">
+                    <span class="w-2 h-2 rounded-full bg-ffcyan animate-ping"></span>
+                    Mercado Oficial Free Fire • Pago Móvil Verificado
+                </div>
+
+                <h1 class="font-gamer font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-white mb-6 leading-[1.15]">
+                    COMPRA Y VENDE CUENTAS <br class="hidden sm:block">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ffcyan via-sky-300 to-ffgold">DE FREE FIRE AL INSTANTE</span>
+                </h1>
+
+                <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-10 leading-relaxed">
+                    Adquiere cuentas verificadas con Pago Móvil o publica tu cuenta en el catálogo comunitario por una comisión única de <strong class="text-ffgold">$2 USD</strong>.
+                </p>
+
+                <!-- Botones CTA del Hero -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+                    <a href="#catalogo" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-ffcyan to-blue-500 text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-cyan flex items-center justify-center gap-2.5">
+                        <i class="fa-solid fa-gamepad text-lg"></i> Explorar Cuentas
+                    </a>
+
+                    <button type="button" onclick="openPublishModal(false)" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-ffgold to-fforange text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-gold flex items-center justify-center gap-2.5">
+                        <i class="fa-solid fa-plus-circle text-lg"></i> Publicar Cuenta ($2 USD)
+                    </button>
+
+                    <button type="button" onclick="toggleFloatingWaMenu(true)"
+                       class="w-full sm:w-auto px-7 py-4 rounded-xl bg-ffcard hover:bg-emerald-600/20 text-emerald-400 border border-emerald-500/50 font-bold text-sm transition-all flex items-center justify-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Hablar Personalmente
+                    </button>
+                </div>
+            </div>
+
+            <!-- Barra de Estadísticas Gamer -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                <div class="bg-ffcard/90 backdrop-blur-sm border border-gray-800 rounded-2xl p-4 sm:p-5 text-center">
+                    <span class="block font-gamer font-extrabold text-2xl sm:text-3xl text-ffcyan" id="stat-live-count">0</span>
+                    <span class="text-xs font-tech uppercase tracking-wider text-gray-400 font-semibold">Cuentas en Catálogo</span>
+                </div>
+                <div class="bg-ffcard/90 backdrop-blur-sm border border-gray-800 rounded-2xl p-4 sm:p-5 text-center">
+                    <span class="block font-gamer font-extrabold text-2xl sm:text-3xl text-ffgold">100%</span>
+                    <span class="text-xs font-tech uppercase tracking-wider text-gray-400 font-semibold">Verificación Segura</span>
+                </div>
+                <div class="bg-ffcard/90 backdrop-blur-sm border border-gray-800 rounded-2xl p-4 sm:p-5 text-center">
+                    <span class="block font-gamer font-extrabold text-2xl sm:text-3xl text-emerald-400">24/7</span>
+                    <span class="text-xs font-tech uppercase tracking-wider text-gray-400 font-semibold">Pago Móvil Directo</span>
+                </div>
+                <div class="bg-ffcard/90 backdrop-blur-sm border border-ffgold/40 rounded-2xl p-4 sm:p-5 text-center">
+                    <span class="block font-gamer font-extrabold text-2xl sm:text-3xl text-ffgold">$2 USD</span>
+                    <span class="text-xs font-tech uppercase tracking-wider text-gray-300 font-semibold">Comisión Publicación</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo Dinámico con Pestañas -->
+    <section id="catalogo" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Dos Pestañas Limpias: Catálogo Comunidad vs Comprar con el Administrador -->
+        <div class="bg-ffcard p-2 rounded-2xl border border-gray-800 mb-8 grid grid-cols-1 sm:grid-cols-2 gap-2 shadow-xl">
+            <button type="button" id="tab-community-store" onclick="switchCatalogTab('community')"
+                    class="py-4 px-5 rounded-xl font-gamer font-bold text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 bg-gradient-to-r from-ffgold to-fforange text-ffdark shadow-neon-gold">
+                <i class="fa-solid fa-users text-base"></i>
+                <span>Catálogo Comunidad</span>
+                <span id="badge-community-count" class="px-2 py-0.5 rounded-full bg-ffdark/20 text-ffdark text-xs font-extrabold">0</span>
+            </button>
+
+            <button type="button" id="tab-admin-store" onclick="switchCatalogTab('admin')"
+                    class="py-4 px-5 rounded-xl font-gamer font-bold text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 bg-ffdark text-gray-300 hover:text-white border border-gray-800">
+                <i class="fa-solid fa-crown text-base text-ffcyan"></i>
+                <span>Comprar con el Administrador</span>
+                <span id="badge-admin-count" class="px-2 py-0.5 rounded-full bg-ffcyan/20 text-ffcyan text-xs font-extrabold">0</span>
+            </button>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+                <div id="section-tag-badge" class="inline-flex items-center gap-2 text-xs font-tech font-bold uppercase tracking-widest text-ffgold mb-1">
+                    <span class="w-2 h-2 rounded-full bg-ffgold animate-pulse"></span>
+                    Catálogo Comunitario • Comisión de Publicación $2 USD
+                </div>
+                <h2 id="section-main-title" class="font-gamer font-extrabold text-2xl sm:text-4xl text-white uppercase tracking-wide">
+                    Catálogo <span class="text-ffgold">Comunidad</span>
+                </h2>
+                <p id="section-sub-desc" class="text-gray-400 text-sm mt-1">
+                    Cuentas publicadas por jugadores con fotos reales y contacto directo de WhatsApp para hablar con el vendedor.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+                <div class="text-sm text-gray-300 bg-ffcard px-4 py-2.5 rounded-xl border border-gray-800 font-tech font-semibold tracking-wide">
+                    Disponibles: <span id="account-count" class="text-ffcyan font-gamer font-bold">0</span>
+                </div>
+                <button type="button" id="header-publish-action-btn" onclick="handleContextualPublishClick()" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-ffgold to-fforange text-ffdark font-bold text-sm hover:brightness-110 transition-all shadow-neon-gold flex items-center gap-2">
+                    <i class="fa-solid fa-plus"></i> <span id="header-publish-action-text">Publicar mi Cuenta ($2 USD)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Barra de Búsqueda y Filtros -->
+        <div class="bg-ffcard p-4 sm:p-6 rounded-2xl border border-gray-800/90 mb-10 shadow-xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Buscador -->
+                <div class="sm:col-span-2">
+                    <label for="search-input" class="block text-xs font-tech font-bold text-gray-400 uppercase tracking-wider mb-1.5">Buscar por Título, Skin, Pase o Arma Evolutiva</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-ffcyan/70"></i>
+                        <input type="text" id="search-input" placeholder="Ej. Sakura, Cobra, AK47 Dragón, Criminal, Angelical..." 
+                               class="w-full bg-ffdark border border-gray-700 focus:border-ffcyan rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors">
+                    </div>
+                </div>
+
+                <!-- Filtro por Rango -->
+                <div>
+                    <label for="rank-filter" class="block text-xs font-tech font-bold text-gray-400 uppercase tracking-wider mb-1.5">Rango Actual</label>
+                    <select id="rank-filter" class="w-full bg-ffdark border border-gray-700 focus:border-ffcyan rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors">
+                        <option value="all">Todos los rangos</option>
+                        <option value="Gran Maestro">Gran Maestro</option>
+                        <option value="Heroico">Heroico</option>
+                        <option value="Maestro">Maestro</option>
+                        <option value="Diamante">Diamante</option>
+                        <option value="Platino">Platino</option>
+                    </select>
+                </div>
+
+                <!-- Filtro por Región -->
+                <div>
+                    <label for="region-filter" class="block text-xs font-tech font-bold text-gray-400 uppercase tracking-wider mb-1.5">Región</label>
+                    <select id="region-filter" class="w-full bg-ffdark border border-gray-700 focus:border-ffcyan rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors">
+                        <option value="all">Todas las regiones</option>
+                        <option value="EE.UU.">EE.UU.</option>
+                        <option value="Sudamérica">Sudamérica</option>
+                        <option value="Norteamérica">Norteamérica</option>
+                        <option value="Europa">Europa</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estado de Carga -->
+        <div id="loading-state" class="text-center py-16 bg-ffcard/60 rounded-3xl border border-gray-800">
+            <i class="fa-solid fa-circle-notch fa-spin text-4xl text-ffcyan mb-4"></i>
+            <p class="text-gray-300 font-tech uppercase tracking-wider text-base">Sincronizando catálogo en vivo...</p>
+        </div>
+
+        <!-- Cuadrícula de Tarjetas Estilo Gamer -->
+        <div id="accounts-grid" class="hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Las tarjetas se renderizan dinámicamente -->
+        </div>
+
+        <!-- Estado Vacío Inicial -->
+        <div id="empty-catalog-state" class="hidden text-center py-16 px-6 bg-gradient-to-b from-ffcard to-ffdark rounded-3xl border border-dashed border-ffcyan/40 shadow-2xl">
+            <div id="empty-icon-box" class="w-20 h-20 rounded-2xl bg-gradient-to-br from-ffcyan/20 to-blue-500/20 border border-ffcyan/40 text-ffcyan flex items-center justify-center text-4xl mx-auto mb-5 shadow-neon-cyan">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+            <h3 id="empty-title" class="font-gamer text-2xl sm:text-3xl font-extrabold text-white mb-3 uppercase">Tienda Oficial del Administrador</h3>
+            <p id="empty-desc" class="text-gray-400 text-sm sm:text-base max-w-lg mx-auto mb-8 leading-relaxed">
+                Aquí se publican exclusivamente las cuentas oficiales del Administrador sin comisión. Si eres el Administrador, inicia sesión para publicar tus cuentas al instante.
+            </p>
+            <div id="empty-actions" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <!-- Botones dinámicos según pestaña y rol -->
+            </div>
+        </div>
+
+        <!-- Estado Vacío de Búsqueda / Filtros -->
+        <div id="empty-filter-state" class="hidden text-center py-16 px-6 bg-ffcard rounded-3xl border border-gray-800">
+            <i class="fa-solid fa-filter-circle-xmark text-5xl text-gray-600 mb-4"></i>
+            <h3 class="font-gamer text-xl sm:text-2xl font-bold text-white mb-2">Sin resultados para tu filtro</h3>
+            <p class="text-gray-400 text-sm mb-6">Ninguna cuenta publicada coincide con esos criterios. Prueba limpiar los filtros o escríbenos directamente.</p>
+            <button type="button" onclick="resetFilters()" class="px-6 py-3 rounded-xl bg-ffcyan text-ffdark font-bold text-sm hover:brightness-110 transition-all">
+                Mostrar Todas las Cuentas
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección "¿Cómo funciona?" -->
+    <section id="como-funciona" class="py-16 bg-ffcard/40 border-y border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-tech font-bold uppercase tracking-[0.2em] text-ffcyan">Proceso Rápido y Transparente</span>
+                <h2 class="font-gamer font-extrabold text-2xl sm:text-4xl text-white uppercase mt-1">
+                    ¿Cómo <span class="text-ffgold">Funciona?</span>
+                </h2>
+                <p class="text-gray-400 text-sm mt-2">Compra cuentas verificadas con Pago Móvil o publica la tuya en nuestro catálogo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Paso 1 -->
+                <div class="bg-ffcard p-7 rounded-2xl border border-gray-800 relative overflow-hidden group hover:border-ffcyan/50 transition-colors">
+                    <span class="absolute -top-3 right-4 font-gamer font-black text-7xl text-white/[0.03] select-none">01</span>
+                    <div class="w-12 h-12 rounded-xl bg-ffcyan/10 border border-ffcyan/30 text-ffcyan flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="font-gamer font-bold text-lg text-white mb-2">1. Elige Cuenta o Publica ($2)</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Explora las cuentas directas en <strong class="text-ffcyan">Comprar con el Administrador</strong> o publica tu propia cuenta en el catálogo comunitario por una comisión de <strong class="text-ffgold">$2 USD</strong>.
+                    </p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="bg-ffcard p-7 rounded-2xl border border-gray-800 relative overflow-hidden group hover:border-ffgold/50 transition-colors">
+                    <span class="absolute -top-3 right-4 font-gamer font-black text-7xl text-white/[0.03] select-none">02</span>
+                    <div class="w-12 h-12 rounded-xl bg-ffgold/10 border border-ffgold/30 text-ffgold flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="font-gamer font-bold text-lg text-white mb-2">2. Pago Móvil y Verificador</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Copia todos los datos de <strong class="text-ffgold">Pago Móvil</strong> con un clic, realiza tu transferencia, adjunta la captura del comprobante y valida tu referencia en el verificador.
+                    </p>
+                </div>
+
+                <!-- Paso 3: Contacto Directo Admin -->
+                <div class="bg-ffdark/90 border border-emerald-500/40 rounded-2xl p-6 text-center shadow-neon-emerald flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-2xl mx-auto mb-3">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span class="text-xs font-tech uppercase tracking-widest text-emerald-400 font-bold">Líneas Directas de Atención</span>
+                        <h3 class="font-gamer font-bold text-lg text-white mt-1 mb-1">Asesores Oficiales DARKCODE</h3>
+                        <p class="text-gray-400 text-xs mb-4">
+                            Confirmación inmediata tras validar tu comprobante de Pago Móvil.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <a href="https://wa.me/584125598221?text=Hola%20Asesor%201%20de%20DARKCODE%2C%20quisiera%20hablar%20personalmente%20contigo." 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-ffdark font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Línea 1: +58 0412-5598221
+                        </a>
+                        <a href="https://wa.me/584161591048?text=Hola%20Asesor%202%20de%20DARKCODE%2C%20quisiera%20hablar%20personalmente%20contigo." 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full py-2.5 px-4 rounded-xl bg-ffcard hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Línea 2: +58 416-1591048
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página / Footer -->
+    <footer class="bg-ffdark border-t border-gray-800/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#f8f6f0] to-[#e6e2d6] border border-ffcyan/50 flex items-center justify-center text-[#12161d] p-1">
+                        <svg viewBox="0 0 120 120" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Darkcode">
+                            <circle cx="60" cy="60" r="51" stroke="currentColor" stroke-width="6.5"/>
+                            <path d="M44 33 L40 21 L51 26.5 L60 16.5 L69 26.5 L80 21 L76 33 Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M60 31.5C41.5 31.5 31 43.5 31 58.5C31 66.2 34.2 71.5 38.8 74.5C39.8 75.2 40.5 76.2 40.5 77.5V86.5C40.5 91.5 44.5 95 49.5 95H70.5C75.5 95 79.5 91.5 79.5 86.5V77.5C79.5 76.2 80.2 75.2 81.2 74.5C85.8 71.5 89 66.2 89 58.5C89 43.5 78.5 31.5 60 31.5Z" stroke="currentColor" stroke-width="6.2" stroke-linejoin="round"/>
+                            <path d="M40.5 47.5C43 42.2 48.2 38.8 54.5 38.2" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/>
+                            <ellipse cx="47.2" cy="63" rx="6.2" ry="7.2" transform="rotate(-10 47.2 63)" fill="currentColor"/>
+                            <ellipse cx="72.8" cy="63" rx="6.2" ry="7.2" transform="rotate(10 72.8 63)" fill="currentColor"/>
+                            <path d="M60 69.5C58.6 69.5 55.5 75.2 55.8 76.8C56.1 78.2 58.5 77.6 60 77.6C61.5 77.6 63.9 78.2 64.2 76.8C64.5 75.2 61.4 69.5 60 69.5Z" fill="currentColor"/>
+                            <path d="M49.5 86.5V94.5M60 86.5V94.5M70.5 86.5V94.5" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-gamer font-bold text-xl text-white">DARK<span class="text-ffcyan">CODE</span></span>
+                        <p class="text-xs text-gray-500">Tienda Oficial y Mercado de Cuentas Free Fire.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <button type="button" onclick="openPublishModal(false)" class="text-sm font-semibold text-ffgold hover:underline mr-1">
+                        + Publicar Cuenta ($2 USD)
+                    </button>
+                    <a href="https://wa.me/584125598221?text=Hola%20Asesor%201%2C%20te%20escribo%20desde%20DARKCODE." 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex items-center gap-2 bg-ffcard hover:bg-gray-800 border border-emerald-500/40 px-3.5 py-2 rounded-xl text-emerald-400 font-semibold text-xs sm:text-sm transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>+58 0412-5598221</span>
+                    </a>
+                    <a href="https://wa.me/584161591048?text=Hola%20Asesor%202%2C%20te%20escribo%20desde%20DARKCODE." 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex items-center gap-2 bg-ffcard hover:bg-gray-800 border border-ffcyan/40 px-3.5 py-2 rounded-xl text-ffcyan font-semibold text-xs sm:text-sm transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>+58 416-1591048</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-800/60 text-center text-xs text-gray-500">
+                <p>DARKCODE es una plataforma independiente de intercambio gamer y no está afiliada con Garena International.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menú Flotante Desplegable de WhatsApp -->
+    <div id="floating-wa-container" class="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+        <div id="floating-wa-menu" class="hidden mb-3 w-72 bg-ffcard/95 backdrop-blur-md border border-emerald-500/50 rounded-2xl shadow-2xl p-3.5 transition-all">
+            <div class="flex items-center justify-between pb-2.5 mb-2.5 border-b border-gray-800">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="font-tech font-bold text-xs uppercase tracking-wider text-white">Asesores en Línea</span>
+                </div>
+                <button type="button" onclick="toggleFloatingWaMenu(false)" class="text-gray-400 hover:text-white text-xs p-1">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="space-y-2">
+                <a href="https://wa.me/584125598221?text=Hola%20Asesor%201%20de%20DARKCODE%2C%20quisiera%20hablar%20personalmente%20contigo." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-between p-2.5 rounded-xl bg-ffdark hover:bg-emerald-500/15 border border-gray-800 hover:border-emerald-500/50 transition-all group">
+                    <div>
+                        <span class="block text-[11px] font-tech uppercase font-bold text-emerald-400">Asesor Principal (Línea 1)</span>
+                        <span class="text-sm font-mono font-bold text-white">+58 0412-5598221</span>
+                    </div>
+                    <div class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-400 group-hover:bg-emerald-500 group-hover:text-ffdark flex items-center justify-center transition-colors">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/584161591048?text=Hola%20Asesor%202%20de%20DARKCODE%2C%20quisiera%20hablar%20personalmente%20contigo." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-between p-2.5 rounded-xl bg-ffdark hover:bg-ffcyan/15 border border-gray-800 hover:border-ffcyan/50 transition-all group">
+                    <div>
+                        <span class="block text-[11px] font-tech uppercase font-bold text-ffcyan">Asesor Secundario (Línea 2)</span>
+                        <span class="text-sm font-mono font-bold text-white">+58 416-1591048</span>
+                    </div>
+                    <div class="w-9 h-9 rounded-lg bg-ffcyan/20 text-ffcyan group-hover:bg-ffcyan group-hover:text-ffdark flex items-center justify-center transition-colors">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <button type="button" onclick="toggleFloatingWaMenu()" 
+                aria-label="Abrir opciones de WhatsApp"
+                class="flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-400 text-ffdark font-bold px-4 py-3.5 rounded-full shadow-neon-emerald hover:scale-105 transition-all">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="text-xs sm:text-sm font-extrabold">WhatsApp Oficial</span>
+        </button>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 1: COMPRAR CUENTA + PAGO MÓVIL + COPIAR + CAPTURA + VERIFICADOR     -->
+    <!-- ========================================================================= -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-sm">
+        <div class="bg-ffcard border border-ffcyan/40 rounded-3xl max-w-2xl w-full max-h-[94vh] overflow-y-auto shadow-2xl relative">
+            <!-- Cabecera Sticky -->
+            <div class="sticky top-0 z-20 bg-ffcard/95 backdrop-blur-md px-5 sm:px-6 py-4 border-b border-gray-800 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-ffcyan/15 text-ffcyan flex items-center justify-center">
+                        <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-gamer font-bold text-base sm:text-lg text-white uppercase">Comprar Cuenta • Pago Móvil</h3>
+                        <p id="checkout-subtitle" class="text-xs text-ffcyan font-semibold">Compra Directa Verificada</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeCheckoutModal()" class="w-9 h-9 rounded-full bg-ffdark hover:bg-gray-800 text-gray-400 hover:text-white flex items-center justify-center border border-gray-700 transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-5 sm:p-6 space-y-5">
+                <!-- Resumen de la Cuenta a Comprar -->
+                <div id="checkout-account-summary" class="bg-ffdark p-4 rounded-2xl border border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <!-- Se rellena dinámicamente -->
+                </div>
+
+                <!-- BLOQUE 1: DATOS DE PAGO MÓVIL -->
+                <div class="bg-gradient-to-br from-ffsurface to-ffdark p-4 sm:p-5 rounded-2xl border border-ffgold/40 shadow-lg space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-tech font-bold uppercase tracking-widest text-ffgold flex items-center gap-2">
+                            <i class="fa-solid fa-mobile-screen-button text-base"></i> Datos de Pago Móvil Oficial
+                        </span>
+                        <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[11px] font-bold border border-emerald-500/30">
+                            Activo 24/7
+                        </span>
+                    </div>
+
+                    <div id="checkout-pm-box" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 bg-ffdark/90 p-3.5 rounded-xl border border-gray-800 text-xs sm:text-sm">
+                        <div>
+                            <span class="block text-[10px] font-tech uppercase text-gray-400">Banco</span>
+                            <span class="font-bold text-white pm-field-bank">Banco de los Trabajadores (0175)</span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] font-tech uppercase text-gray-400">Número de tlf</span>
+                            <span class="font-mono font-bold text-ffcyan pm-field-phone">0414-5047264</span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] font-tech uppercase text-gray-400">Cédula</span>
+                            <span class="font-mono font-bold text-white pm-field-id">10639201</span>
+                        </div>
+                    </div>
+
+                    <!-- Botón Copiar Todos los Datos -->
+                    <button type="button" onclick="copyPagoMovilData('checkout')" id="copy-pm-checkout-btn"
+                            class="w-full py-3 px-4 rounded-xl bg-ffgold/15 hover:bg-ffgold text-ffgold hover:text-ffdark border border-ffgold/50 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-copy"></i> <span>Copiar todos los datos</span>
+                    </button>
+                </div>
+
+                <!-- BLOQUE 2: CAPTURA DEL PAGO Y VERIFICADOR -->
+                <form id="checkout-payment-form" class="space-y-4">
+                    <!-- Subir Captura del Pago -->
+                    <div class="bg-ffdark p-4 rounded-2xl border border-gray-800 space-y-3">
+                        <label for="checkout-screenshot" class="block text-xs font-tech font-bold text-gray-200 uppercase tracking-wider">
+                            <i class="fa-solid fa-image text-ffcyan mr-1"></i> 1. Adjuntar Captura del Pago Móvil *
+                        </label>
+                        <input type="file" id="checkout-screenshot" accept="image/*" required
+                               onchange="handleScreenshotPreview(this, 'checkout-preview-box', 'checkout-preview-img')"
+                               class="w-full text-xs text-gray-300 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-ffcyan file:text-ffdark hover:file:brightness-110 cursor-pointer bg-ffcard border border-gray-700 rounded-xl p-2">
+                        
+                        <div id="checkout-preview-box" class="hidden mt-2 relative rounded-xl overflow-hidden border border-emerald-500/40 bg-black/50 p-2 text-center">
+                            <img id="checkout-preview-img" src="" alt="Vista previa comprobante" class="max-h-44 mx-auto rounded-lg object-contain">
+                            <span class="inline-block mt-1.5 text-[11px] font-bold text-emerald-400">
+                                <i class="fa-solid fa-check-circle"></i> Captura cargada correctamente
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Verificador de Pago -->
+                    <div class="bg-ffdark p-4 rounded-2xl border border-gray-800 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-tech font-bold text-ffcyan uppercase tracking-wider">
+                                <i class="fa-solid fa-shield-check mr-1"></i> 2. Verificador de Transacción *
+                            </span>
+                            <span id="checkout-verifier-badge" class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-gray-800 text-gray-400">
+                                Esperando datos...
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label for="checkout-ref" class="block text-[11px] font-semibold text-gray-400 mb-1">Últimos 4 a 8 dígitos de Referencia *</label>
+                                <input type="text" id="checkout-ref" required minlength="4" maxlength="12" pattern="[0-9]{4,12}"
+                                       oninput="validatePaymentVerifier('checkout')"
+                                       placeholder="Ej. 482910"
+                                       class="w-full bg-ffcard border border-gray-700 focus:border-ffcyan rounded-xl px-3.5 py-2.5 text-sm font-mono text-white placeholder-gray-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="checkout-buyer-phone" class="block text-[11px] font-semibold text-gray-400 mb-1">Tu Teléfono / WhatsApp de Contacto *</label>
+                                <input type="tel" id="checkout-buyer-phone" required minlength="7"
+                                       oninput="validatePaymentVerifier('checkout')"
+                                       placeholder="Ej. 0412-1234567"
+                                       class="w-full bg-ffcard border border-gray-700 focus:border-ffcyan rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <!-- Resultado del Verificador -->
+                        <div id="checkout-verifier-status" class="p-3 rounded-xl bg-ffcard/80 border border-gray-800 text-xs text-gray-400 flex items-center gap-2.5">
+                            <i class="fa-solid fa-circle-info text-ffcyan"></i>
+                            <span>Adjunta la captura y escribe el número de referencia para verificar tu comprobante.</span>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 3: BOTÓN CONFIRMAR PAGO -->
+                    <button type="submit" id="checkout-confirm-btn"
+                            class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-ffdark font-gamer font-extrabold text-sm sm:text-base uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-emerald flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-circle-check text-lg"></i> Confirmar Pago
+                    </button>
+                </form>
+
+                <!-- Ticket Post-Confirmación (Se muestra al confirmar el pago) -->
+                <div id="checkout-confirmed-ticket" class="hidden bg-emerald-950/30 border border-emerald-500/50 rounded-2xl p-5 text-center space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-gamer font-bold text-xl text-white">¡Pago Confirmado y Enviado!</h4>
+                        <p class="text-xs sm:text-sm text-gray-300 mt-1">
+                            Tu comprobante ha sido registrado en el verificador. Envía ahora la confirmación directa por WhatsApp al Administrador para recibir los datos de acceso de la cuenta:
+                        </p>
+                    </div>
+                    <div id="ticket-summary-details" class="bg-ffdark p-3.5 rounded-xl border border-gray-800 text-xs text-left font-mono text-gray-300 space-y-1"></div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <a id="ticket-wa-1" href="#" target="_blank" rel="noopener noreferrer"
+                           class="py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-ffdark font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Enviar a Línea 1 (0412)
+                        </a>
+                        <a id="ticket-wa-2" href="#" target="_blank" rel="noopener noreferrer"
+                           class="py-3 px-4 rounded-xl bg-ffdark hover:bg-ffcyan/15 text-ffcyan border border-ffcyan/50 font-bold text-xs sm:text-sm flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Enviar a Línea 2 (0416)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 2: PUBLICAR CUENTA (COMUNIDAD $2 USD vs ADMIN SIN COMISIÓN)         -->
+    <!-- ========================================================================= -->
+    <div id="publish-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+        <div class="bg-ffcard border border-ffgold/40 rounded-3xl max-w-2xl w-full max-h-[92vh] overflow-y-auto shadow-2xl relative">
+            <div class="sticky top-0 z-20 bg-ffcard/95 backdrop-blur-md px-6 py-5 border-b border-gray-800 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div id="pub-modal-icon" class="w-11 h-11 rounded-xl bg-[#f8f6f0] border border-ffgold/60 text-[#12161d] flex items-center justify-center p-1">
+                        <svg viewBox="0 0 120 120" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Darkcode">
+                            <circle cx="60" cy="60" r="51" stroke="currentColor" stroke-width="6.5"/>
+                            <path d="M44 33 L40 21 L51 26.5 L60 16.5 L69 26.5 L80 21 L76 33 Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M60 31.5C41.5 31.5 31 43.5 31 58.5C31 66.2 34.2 71.5 38.8 74.5C39.8 75.2 40.5 76.2 40.5 77.5V86.5C40.5 91.5 44.5 95 49.5 95H70.5C75.5 95 79.5 91.5 79.5 86.5V77.5C79.5 76.2 80.2 75.2 81.2 74.5C85.8 71.5 89 66.2 89 58.5C89 43.5 78.5 31.5 60 31.5Z" stroke="currentColor" stroke-width="6.2" stroke-linejoin="round"/>
+                            <path d="M40.5 47.5C43 42.2 48.2 38.8 54.5 38.2" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/>
+                            <ellipse cx="47.2" cy="63" rx="6.2" ry="7.2" transform="rotate(-10 47.2 63)" fill="currentColor"/>
+                            <ellipse cx="72.8" cy="63" rx="6.2" ry="7.2" transform="rotate(10 72.8 63)" fill="currentColor"/>
+                            <path d="M60 69.5C58.6 69.5 55.5 75.2 55.8 76.8C56.1 78.2 58.5 77.6 60 77.6C61.5 77.6 63.9 78.2 64.2 76.8C64.5 75.2 61.4 69.5 60 69.5Z" fill="currentColor"/>
+                            <path d="M49.5 86.5V94.5M60 86.5V94.5M70.5 86.5V94.5" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 id="pub-modal-title" class="font-gamer font-bold text-lg sm:text-xl text-white uppercase">Publicar mi Cuenta</h3>
+                        <p id="pub-modal-subtitle" class="text-xs text-ffgold font-semibold">Comisión única de publicación: $2 USD</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closePublishModal()" class="w-9 h-9 rounded-full bg-ffdark hover:bg-gray-800 text-gray-400 hover:text-white flex items-center justify-center border border-gray-700 transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="publish-form" class="p-6 space-y-5">
+                <input type="hidden" id="pub-is-admin-store" value="false">
+
+                <!-- Banner Informativo Admin Sin Comisión (Solo visible cuando publicas como Admin) -->
+                <div id="pub-admin-free-banner" class="hidden bg-ffcyan/10 border border-ffcyan/40 rounded-2xl p-4 flex items-center gap-3">
+                    <i class="fa-solid fa-crown text-ffcyan text-2xl"></i>
+                    <div class="text-xs text-gray-200">
+                        <p class="font-bold text-ffcyan text-sm">Publicación Oficial del Administrador (0% Comisión)</p>
+                        <p>Esta cuenta aparecerá directamente en la sección <strong>"Comprar Cuenta con el Administrador"</strong> sin pagar comisión.</p>
+                    </div>
+                </div>
+
+                <!-- Título y Precio -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="sm:col-span-2">
+                        <label for="pub-title" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Título de la Cuenta *</label>
+                        <input type="text" id="pub-title" required maxlength="70" placeholder="Ej. Cuenta Veterana Pase Sakura + AK Dragón" 
+                               class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="pub-price" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Precio de Venta (USD $) *</label>
+                        <div class="relative">
+                            <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-ffgold font-bold">$</span>
+                            <input type="number" id="pub-price" required min="1" max="10000" step="1" placeholder="80" 
+                                   class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl pl-8 pr-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nivel, Rango y Región -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label for="pub-level" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Nivel *</label>
+                        <input type="number" id="pub-level" required min="1" max="100" placeholder="Ej. 72" 
+                               class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="pub-rank" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Rango Actual *</label>
+                        <select id="pub-rank" required class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none">
+                            <option value="Heroico">Heroico</option>
+                            <option value="Gran Maestro">Gran Maestro</option>
+                            <option value="Maestro">Maestro</option>
+                            <option value="Diamante">Diamante</option>
+                            <option value="Platino">Platino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pub-region" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Región *</label>
+                        <select id="pub-region" required class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none">
+                            <option value="EE.UU.">EE.UU.</option>
+                            <option value="Sudamérica">Sudamérica</option>
+                            <option value="Norteamérica">Norteamérica</option>
+                            <option value="Europa">Europa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Pases Élites, Vinculación y WhatsApp Vendedor -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label for="pub-passes" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Pases Élites *</label>
+                        <input type="number" id="pub-passes" required min="0" max="150" placeholder="Ej. 18" 
+                               class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="pub-bind" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Vinculación *</label>
+                        <select id="pub-bind" required class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none">
+                            <option value="Facebook">Facebook</option>
+                            <option value="Google">Google</option>
+                            <option value="VK">VK</option>
+                            <option value="Twitter">Twitter</option>
+                        </select>
+                    </div>
+                    <div id="pub-whatsapp-wrapper">
+                        <label for="pub-whatsapp" class="block text-xs font-tech font-bold text-emerald-400 uppercase tracking-wider mb-1.5">WhatsApp / Teléfono Personal *</label>
+                        <input type="tel" id="pub-whatsapp" required placeholder="Ej. +58 412-0000000" 
+                               class="w-full bg-ffdark border border-emerald-500/40 focus:border-emerald-400 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- Armas Evolutivas / Skins Destacadas -->
+                <div>
+                    <label for="pub-evos" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Armas Evolutivas / Skins Destacadas (separadas por coma) *</label>
+                    <input type="text" id="pub-evos" required placeholder="Ej. AK47 Dragón Flama Azul Nvl 7, MP40 Cobra Nvl 6, Criminal Verde" 
+                           class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none">
+                </div>
+
+                <!-- Descripción del Inventario -->
+                <div>
+                    <label for="pub-desc" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Detalles del Inventario *</label>
+                    <textarea id="pub-desc" required rows="3" placeholder="Describe emotes, puños, paredes gloo, pantalones angelicales, cambio de nombre disponible..." 
+                              class="w-full bg-ffdark border border-gray-700 focus:border-ffgold rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none"></textarea>
+                </div>
+
+                <!-- Fotos Reales de la Cuenta (Subida desde dispositivo + Galería + URL opcional) -->
+                <div class="bg-ffdark p-4 rounded-2xl border border-gray-800 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <label class="block text-xs font-tech font-bold text-ffcyan uppercase tracking-wider">
+                            <i class="fa-solid fa-camera mr-1"></i> Fotos de tu Cuenta (Perfil, Ropa, Armas)
+                        </label>
+                        <span class="text-[10px] text-gray-400">Máx. 3 fotos</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label for="pub-main-photo-file" class="block text-[11px] font-semibold text-gray-300 mb-1">Foto Principal de Portada</label>
+                            <input type="file" id="pub-main-photo-file" accept="image/*"
+                                   onchange="handleAccountPhotosUpload(this, 'main')"
+                                   class="w-full text-xs text-gray-300 file:mr-2.5 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-ffcyan file:text-ffdark cursor-pointer bg-ffcard border border-gray-700 rounded-xl p-1.5">
+                        </div>
+                        <div>
+                            <label for="pub-gallery-photo-files" class="block text-[11px] font-semibold text-gray-300 mb-1">Fotos Adicionales (Hasta 2 capturas)</label>
+                            <input type="file" id="pub-gallery-photo-files" accept="image/*" multiple
+                                   onchange="handleAccountPhotosUpload(this, 'gallery')"
+                                   class="w-full text-xs text-gray-300 file:mr-2.5 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-ffgold file:text-ffdark cursor-pointer bg-ffcard border border-gray-700 rounded-xl p-1.5">
+                        </div>
+                    </div>
+
+                    <!-- Vista previa de fotos subidas -->
+                    <div id="pub-uploaded-photos-preview" class="hidden grid-cols-3 gap-2 pt-1"></div>
+
+                    <div class="pt-2 border-t border-gray-800/80 space-y-2.5">
+                        <label class="block text-[11px] font-tech font-bold text-gray-400 uppercase tracking-wider">Color de Fondo (si no subes foto) o URL Externa</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="banner-theme" value="gold" checked class="peer sr-only">
+                                <div class="p-2 rounded-xl border border-gray-700 peer-checked:border-ffgold bg-gradient-to-br from-amber-600/30 to-orange-950/60 text-center text-xs font-bold text-ffgold">
+                                    <i class="fa-solid fa-crown mr-1"></i> Dorado VIP
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="banner-theme" value="cyan" class="peer sr-only">
+                                <div class="p-2 rounded-xl border border-gray-700 peer-checked:border-ffcyan bg-gradient-to-br from-cyan-600/30 to-blue-950/60 text-center text-xs font-bold text-ffcyan">
+                                    <i class="fa-solid fa-dragon mr-1"></i> Neón Ciber
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="banner-theme" value="crimson" class="peer sr-only">
+                                <div class="p-2 rounded-xl border border-gray-700 peer-checked:border-rose-500 bg-gradient-to-br from-rose-600/30 to-red-950/60 text-center text-xs font-bold text-rose-400">
+                                    <i class="fa-solid fa-fire mr-1"></i> Cobra Fuego
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="banner-theme" value="emerald" class="peer sr-only">
+                                <div class="p-2 rounded-xl border border-gray-700 peer-checked:border-emerald-500 bg-gradient-to-br from-emerald-600/30 to-teal-950/60 text-center text-xs font-bold text-emerald-400">
+                                    <i class="fa-solid fa-bolt mr-1"></i> Booyah Verde
+                                </div>
+                            </label>
+                        </div>
+                        <input type="url" id="pub-image-url" placeholder="O pega aquí una URL de imagen externa (Opcional)" 
+                               class="w-full bg-ffcard border border-gray-700 focus:border-ffcyan rounded-xl px-3.5 py-2 text-xs text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- SECCIÓN COMISIÓN DE $2 USD PARA PUBLICAR EN EL CATÁLOGO COMUNITARIO -->
+                <div id="pub-commission-section" class="bg-gradient-to-br from-amber-950/30 via-ffdark to-ffdark p-4 sm:p-5 rounded-2xl border border-ffgold/50 space-y-4">
+                    <div class="flex items-start justify-between gap-2">
+                        <div>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-tech font-bold uppercase tracking-wider text-ffgold">
+                                <i class="fa-solid fa-coins"></i> Comisión por Publicar en el Catálogo: $2 USD
+                            </span>
+                            <p class="text-xs text-gray-300 mt-1">
+                                Realiza el Pago Móvil equivalente a <strong>$2 USD</strong>, copia los datos abajo y adjunta tu captura + referencia para publicar.
+                            </p>
+                        </div>
+                        <span class="px-3 py-1 rounded-xl bg-ffgold text-ffdark font-gamer font-extrabold text-sm shrink-0">$2 USD</span>
+                    </div>
+
+                    <!-- Datos Pago Móvil -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-ffcard p-3 rounded-xl border border-gray-800 text-xs">
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase">Banco</span>
+                            <span class="font-bold text-white pm-field-bank">Banco de los Trabajadores (0175)</span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase">Número de tlf</span>
+                            <span class="font-mono font-bold text-ffcyan pm-field-phone">0414-5047264</span>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] text-gray-400 uppercase">Cédula</span>
+                            <span class="font-mono font-bold text-white pm-field-id">10639201</span>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="copyPagoMovilData('publish')" id="copy-pm-publish-btn"
+                            class="w-full py-2.5 px-4 rounded-xl bg-ffgold/15 hover:bg-ffgold text-ffgold hover:text-ffdark border border-ffgold/50 font-bold text-xs transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-copy"></i> <span>Copiar todos los datos</span>
+                    </button>
+
+                    <!-- Captura de Pago Comisión $2 -->
+                    <div class="space-y-2">
+                        <label for="pub-fee-screenshot" class="block text-xs font-tech font-bold text-gray-200 uppercase tracking-wider">
+                            Captura del Pago de Comisión ($2 USD) *
+                        </label>
+                        <input type="file" id="pub-fee-screenshot" accept="image/*"
+                               onchange="handleScreenshotPreview(this, 'pub-preview-box', 'pub-preview-img')"
+                               class="w-full text-xs text-gray-300 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-ffgold file:text-ffdark cursor-pointer bg-ffcard border border-gray-700 rounded-xl p-1.5">
+                        <div id="pub-preview-box" class="hidden rounded-xl overflow-hidden border border-emerald-500/40 bg-black/50 p-2 text-center">
+                            <img id="pub-preview-img" src="" alt="Comprobante comisión" class="max-h-32 mx-auto rounded-lg object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Verificador Referencia Comisión $2 -->
+                    <div>
+                        <label for="pub-fee-ref" class="block text-xs font-tech font-bold text-gray-200 uppercase tracking-wider mb-1">
+                            Verificador • Referencia Pago Móvil (4 a 8 dígitos) *
+                        </label>
+                        <input type="text" id="pub-fee-ref" minlength="4" maxlength="12" placeholder="Ej. 938472"
+                               class="w-full bg-ffcard border border-gray-700 focus:border-ffgold rounded-xl px-3.5 py-2 text-sm font-mono text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <button type="submit" id="publish-submit-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-ffgold to-fforange text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-gold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-rocket"></i> Confirmar Pago ($2) y Publicar Cuenta
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 3: ACCESO RÁPIDO ADMINISTRADOR (CLAVE: 0920)                        -->
+    <!-- ========================================================================= -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+        <div class="bg-ffcard border border-ffcyan/40 rounded-3xl max-w-md w-full overflow-hidden shadow-2xl relative">
+            <div class="bg-ffcard/95 px-6 py-4 border-b border-gray-800 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-ffcyan/15 text-ffcyan flex items-center justify-center">
+                        <i class="fa-solid fa-key text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-gamer font-bold text-base sm:text-lg text-white uppercase">Acceso de Publicación</h3>
+                        <p class="text-xs text-gray-400">Ingresa la clave para publicar sin comisión</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeAdminModal()" class="w-9 h-9 rounded-full bg-ffdark hover:bg-gray-800 text-gray-400 hover:text-white flex items-center justify-center border border-gray-700 transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-6 space-y-5">
+                <form id="admin-login-form" class="space-y-4">
+                    <div>
+                        <label for="admin-pin-input" class="block text-xs font-tech font-bold text-gray-300 uppercase tracking-wider mb-1.5">Clave de Seguridad *</label>
+                        <input type="password" id="admin-pin-input" required inputmode="numeric" placeholder="Ingresa la clave..."
+                               class="w-full bg-ffdark border border-gray-700 focus:border-ffcyan rounded-xl px-4 py-3 text-center font-mono text-lg tracking-widest text-white placeholder-gray-500 focus:outline-none">
+                    </div>
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-ffcyan to-blue-500 text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-cyan">
+                        Verificar Clave y Publicar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: Confirmación Post-Publicación -->
+    <div id="published-success-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+        <div class="bg-ffcard border border-emerald-500/40 rounded-3xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="font-gamer font-bold text-2xl text-white mb-2">¡Cuenta Publicada!</h3>
+            <p class="text-gray-400 text-sm mb-6">
+                Tu cuenta ya está visible en tiempo real. Notifica a cualquiera de nuestros asesores oficiales por WhatsApp para agilizar su venta o verificación:
+            </p>
+            <div class="space-y-2.5">
+                <a id="notify-admin1-wa-link" href="#" target="_blank" rel="noopener noreferrer" 
+                   class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-ffdark font-bold text-sm transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Notificar Línea 1 (+58 0412-5598221)
+                </a>
+                <a id="notify-admin2-wa-link" href="#" target="_blank" rel="noopener noreferrer" 
+                   class="w-full py-3.5 rounded-xl bg-ffdark hover:bg-ffcyan/15 text-ffcyan border border-ffcyan/40 font-bold text-sm transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Notificar Línea 2 (+58 416-1591048)
+                </a>
+                <button type="button" onclick="closeSuccessModal()" class="w-full py-3 rounded-xl bg-ffsurface hover:bg-gray-800 text-gray-300 border border-gray-700 font-semibold text-sm transition-colors mt-1">
+                    Ver cuenta en el catálogo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 5: Detalles de Inventario de Cuenta -->
+    <div id="account-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+        <div class="bg-ffcard border border-gray-700 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button type="button" onclick="closeModal()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-ffdark/90 hover:bg-gray-800 text-gray-300 hover:text-white flex items-center justify-center border border-gray-700 transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- MODAL 6: Confirmación para Eliminar o Marcar Vendida -->
+    <div id="confirm-action-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+        <div class="bg-ffcard border border-gray-700 rounded-3xl max-w-md w-full p-6 text-center shadow-2xl">
+            <div class="w-14 h-14 rounded-2xl bg-ffgold/15 text-ffgold flex items-center justify-center text-2xl mx-auto mb-4">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h3 id="confirm-modal-title" class="font-gamer font-bold text-xl text-white mb-2">Confirmar Acción</h3>
+            <p id="confirm-modal-text" class="text-gray-400 text-sm mb-6">¿Estás seguro de continuar?</p>
+            <div class="flex gap-3">
+                <button type="button" onclick="closeConfirmModal()" class="flex-1 py-3 rounded-xl bg-ffdark hover:bg-gray-800 text-gray-300 border border-gray-700 font-semibold text-sm">
+                    Cancelar
+                </button>
+                <button type="button" id="confirm-modal-btn" class="flex-1 py-3 rounded-xl bg-ffgold text-ffdark font-bold text-sm hover:opacity-90">
+                    Confirmar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de Notificación -->
+    <div id="toast-notification" class="fixed top-24 right-4 z-50 hidden items-center gap-3 bg-ffcard border border-ffcyan text-white px-5 py-3.5 rounded-xl shadow-neon-cyan text-sm font-medium">
+        <i class="fa-solid fa-circle-check text-ffcyan text-lg"></i>
+        <span id="toast-message">Acción completada</span>
+    </div>
+
+    <!-- Firebase SDK & Lógica en Tiempo Real -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, setDoc, onSnapshot, doc, updateDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Números oficiales de WhatsApp de los Asesores
+        const ADMIN_WHATSAPP_1 = "584125598221";
+        const ADMIN_WHATSAPP_2 = "584161591048";
+        const ADMIN_PAGO_MOVIL_WA = "584145047264";
+
+        // Clave secreta para publicar en "Comprar con el Administrador" sin comisión
+        const ADMIN_SECRET_KEY = "0920";
+
+        // Datos oficiales de Pago Móvil configurados
+        const pagoMovilData = {
+            bank: "Banco de los Trabajadores (0175)",
+            phone: "0414-5047264",
+            id: "10639201"
+        };
+
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+
+        let app, auth, db;
+        let currentUser = null;
+        let isAdminAuthenticated = false;
+        let activeCatalogTab = 'community'; // 'community' (Catálogo Comunidad $2) o 'admin' (Comprar con el Administrador)
+        let allAccounts = [];
+        let selectedCheckoutAccount = null;
+        let pendingConfirmAction = null;
+        let uploadedMainPhotoBase64 = "";
+        let uploadedGalleryPhotosBase64 = [];
+
+        // Referencias DOM
+        const loadingState = document.getElementById('loading-state');
+        const accountsGrid = document.getElementById('accounts-grid');
+        const emptyCatalogState = document.getElementById('empty-catalog-state');
+        const emptyFilterState = document.getElementById('empty-filter-state');
+        const accountCount = document.getElementById('account-count');
+        const statLiveCount = document.getElementById('stat-live-count');
+        const searchInput = document.getElementById('search-input');
+        const rankFilter = document.getElementById('rank-filter');
+        const regionFilter = document.getElementById('region-filter');
+
+        // Temas visuales e insignias de rango
+        const bannerThemes = {
+            gold: { gradient: "from-amber-600/35 via-orange-950/65 to-ffcard", icon: "fa-crown", accent: "text-ffgold" },
+            cyan: { gradient: "from-cyan-600/35 via-blue-950/65 to-ffcard", icon: "fa-dragon", accent: "text-ffcyan" },
+            crimson: { gradient: "from-rose-600/35 via-red-950/65 to-ffcard", icon: "fa-fire", accent: "text-rose-400" },
+            emerald: { gradient: "from-emerald-600/35 via-teal-950/65 to-ffcard", icon: "fa-bolt", accent: "text-emerald-400" }
+        };
+
+        const rankBadges = {
+            "Gran Maestro": { color: "text-red-400 border-red-500/40 bg-red-500/10", icon: "fa-crown" },
+            "Heroico": { color: "text-ffgold border-ffgold/40 bg-ffgold/10", icon: "fa-shield-halved" },
+            "Maestro": { color: "text-purple-400 border-purple-500/40 bg-purple-500/10", icon: "fa-gem" },
+            "Diamante": { color: "text-sky-400 border-sky-500/40 bg-sky-500/10", icon: "fa-diamond" },
+            "Platino": { color: "text-teal-400 border-teal-500/40 bg-teal-500/10", icon: "fa-medal" }
+        };
+
+        function escapeHTML(str) {
+            if (typeof str !== 'string') return String(str ?? '');
+            return str
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        // Actualizar visualmente todos los bloques con los datos actuales de Pago Móvil
+        function renderPagoMovilFields() {
+            document.querySelectorAll('.pm-field-bank').forEach(el => el.textContent = pagoMovilData.bank);
+            document.querySelectorAll('.pm-field-phone').forEach(el => el.textContent = pagoMovilData.phone);
+            document.querySelectorAll('.pm-field-id').forEach(el => el.textContent = pagoMovilData.id);
+        }
+
+        // Copiar todos los datos de Pago Móvil al portapapeles
+        window.copyPagoMovilData = function(context) {
+            const formattedText =
+                `Banco: ${pagoMovilData.bank}\n` +
+                `Número de tlf: ${pagoMovilData.phone}\n` +
+                `Cédula: ${pagoMovilData.id}`;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = formattedText;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast("¡Datos copiados!");
+                const btnId = context === 'publish' ? 'copy-pm-publish-btn' : 'copy-pm-checkout-btn';
+                const btn = document.getElementById(btnId);
+                if (btn) {
+                    const originalHTML = btn.innerHTML;
+                    btn.innerHTML = `<i class="fa-solid fa-check"></i> <span>¡Datos copiados!</span>`;
+                    setTimeout(() => { btn.innerHTML = originalHTML; }, 2500);
+                }
+            } catch (err) {
+                console.error("Error al copiar:", err);
+                showToast("No se pudo copiar automáticamente.");
+            }
+            document.body.removeChild(textarea);
+        };
+
+        // Limpiar número de teléfono para enlace wa.me
+        function formatPhoneForWa(rawPhone) {
+            if (!rawPhone) return '';
+            let digits = String(rawPhone).replace(/\D/g, '');
+            if (digits.startsWith('0') && digits.length === 11) {
+                digits = '58' + digits.slice(1);
+            } else if (digits.length === 10 && digits.startsWith('4')) {
+                digits = '58' + digits;
+            }
+            return digits;
+        }
+
+        // Construir enlace de WhatsApp directo con el vendedor comunitario
+        function buildSellerWhatsAppLink(acc) {
+            const cleanPhone = formatPhoneForWa(acc.sellerWhatsapp);
+            if (!cleanPhone) return '';
+            const shortId = acc.code || acc.docId.slice(0, 6).toUpperCase();
+            const message = `Hola 👋, vi tu cuenta de Free Fire publicada en *DARKCODE* y me interesa hablar personalmente contigo:\n\n` +
+                            `🆔 *Código:* #${shortId}\n` +
+                            `🔥 *Cuenta:* ${acc.title}\n` +
+                            `💵 *Precio:* $${acc.price} USD\n` +
+                            `⭐ *Nivel:* ${acc.level} | *Rango:* ${acc.rank}\n\n` +
+                            `¿Sigue disponible?`;
+            return `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
+        }
+
+        // Construir enlace de WhatsApp con los asesores oficiales
+        function buildWhatsAppBuyLink(acc, phoneNumber) {
+            const shortId = acc.code || acc.docId.slice(0, 6).toUpperCase();
+            const advisorLabel = phoneNumber === ADMIN_WHATSAPP_1 ? "Asesor 1" : "Asesor 2";
+            const originTag = acc.isAdminStore ? "TIENDA OFICIAL ADMIN" : "CATÁLOGO COMUNIDAD";
+            const message = `Hola ${advisorLabel} de DARKCODE 👋, me interesa esta cuenta (${originTag}):\n\n` +
+                            `🆔 *Código:* #${shortId}\n` +
+                            `🔥 *Cuenta:* ${acc.title}\n` +
+                            `💵 *Precio:* $${acc.price} USD\n` +
+                            `⭐ *Nivel:* ${acc.level} | *Rango:* ${acc.rank}\n` +
+                            `🌎 *Región:* ${acc.region} | *Vinculación:* ${acc.bind}`;
+            return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        }
+
+        // Inicializar Firebase Auth y Firestore
+        async function initApp() {
+            renderPagoMovilFields();
+
+            if (!firebaseConfig) {
+                loadingState.classList.add('hidden');
+                applyFilters();
+                return;
+            }
+
+            try {
+                app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => {
+                    currentUser = user;
+                    if (user) {
+                        listenToAccounts();
+                    }
+                });
+            } catch (error) {
+                console.error("Error inicializando Firebase:", error);
+                loadingState.classList.add('hidden');
+                applyFilters();
+                showToast("Error de conexión con el servidor.");
+            }
+        }
+
+        // Escuchar cuentas publicadas en Firestore en tiempo real
+        function listenToAccounts() {
+            if (!currentUser) return;
+            const accountsRef = collection(db, 'artifacts', appId, 'public', 'data', 'ff_accounts');
+
+            onSnapshot(accountsRef, (snapshot) => {
+                const fetched = [];
+                snapshot.forEach((docSnap) => {
+                    fetched.push({
+                        docId: docSnap.id,
+                        ...docSnap.data()
+                    });
+                });
+
+                fetched.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+                allAccounts = fetched;
+                loadingState.classList.add('hidden');
+                applyFilters();
+            }, (error) => {
+                console.error("Error leyendo cuentas:", error);
+                loadingState.classList.add('hidden');
+                applyFilters();
+            });
+        }
+
+        // Cambiar entre pestaña "Catálogo Comunidad" y "Comprar con el Administrador"
+        window.switchCatalogTab = function(tab) {
+            activeCatalogTab = tab;
+
+            const tabAdmin = document.getElementById('tab-admin-store');
+            const tabComm = document.getElementById('tab-community-store');
+            const sectionTag = document.getElementById('section-tag-badge');
+            const sectionTitle = document.getElementById('section-main-title');
+            const sectionDesc = document.getElementById('section-sub-desc');
+            const actionBtn = document.getElementById('header-publish-action-btn');
+            const actionText = document.getElementById('header-publish-action-text');
+
+            if (tab === 'admin') {
+                tabAdmin.className = "py-4 px-5 rounded-xl font-gamer font-bold text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 bg-gradient-to-r from-ffcyan to-blue-500 text-ffdark shadow-neon-cyan";
+                tabComm.className = "py-4 px-5 rounded-xl font-gamer font-bold text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 bg-ffdark text-gray-300 hover:text-white border border-gray-800";
+
+                sectionTag.className = "inline-flex items-center gap-2 text-xs font-tech font-bold uppercase tracking-widest text-ffcyan mb-1";
+                sectionTag.innerHTML = `<span class="w-2 h-2 rounded-full bg-ffcyan animate-pulse"></span> Stock Oficial Verificado • Pago Móvil Directo`;
+                sectionTitle.innerHTML = `Comprar con el <span class="text-ffcyan">Administrador</span>`;
+                sectionDesc.textContent = "Cuentas oficiales vendidas directamente aquí. Pulsa Comprar Cuenta para ver los datos de Pago Móvil y confirmar tu pago.";
+
+                actionBtn.classList.remove('hidden');
+                actionBtn.classList.add('flex');
+                actionBtn.className = "px-5 py-2.5 rounded-xl bg-gradient-to-r from-ffcyan to-blue-500 text-ffdark font-bold text-sm hover:brightness-110 transition-all shadow-neon-cyan flex items-center gap-2";
+                actionText.textContent = "Publicar Cuenta Oficial";
+            } else {
+                tabComm.className = "py-4 px-5 rounded-xl font-gamer font-bold text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 bg-gradient-to-r from-ffgold to-fforange text-ffdark shadow-neon-gold";
+                tabAdmin.className = "py-4 px-5 rounded-xl font-gamer font-bold text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 bg-ffdark text-gray-300 hover:text-white border border-gray-800";
+
+                sectionTag.className = "inline-flex items-center gap-2 text-xs font-tech font-bold uppercase tracking-widest text-ffgold mb-1";
+                sectionTag.innerHTML = `<span class="w-2 h-2 rounded-full bg-ffgold animate-pulse"></span> Catálogo Comunitario • Comisión de Publicación $2 USD`;
+                sectionTitle.innerHTML = `Catálogo <span class="text-ffgold">Comunidad</span>`;
+                sectionDesc.textContent = "Cuentas publicadas por jugadores con fotos reales y contacto directo de WhatsApp para hablar con el vendedor.";
+
+                actionBtn.classList.remove('hidden');
+                actionBtn.classList.add('flex');
+                actionBtn.className = "px-5 py-2.5 rounded-xl bg-gradient-to-r from-ffgold to-fforange text-ffdark font-bold text-sm hover:brightness-110 transition-all shadow-neon-gold flex items-center gap-2";
+                actionText.textContent = "Publicar mi Cuenta ($2 USD)";
+            }
+
+            applyFilters();
+        };
+
+        window.handleContextualPublishClick = function() {
+            if (activeCatalogTab === 'admin') {
+                openPublishModal(true);
+            } else {
+                openPublishModal(false);
+            }
+        };
+
+        // Filtrar y renderizar cuentas según la pestaña activa
+        function applyFilters() {
+            const query = searchInput.value.toLowerCase().trim();
+            const selectedRank = rankFilter.value;
+            const selectedRegion = regionFilter.value;
+
+            const adminAccounts = allAccounts.filter(a => a.isAdminStore === true);
+            const communityAccounts = allAccounts.filter(a => a.isAdminStore !== true);
+
+            const badgeAdmin = document.getElementById('badge-admin-count');
+            const badgeComm = document.getElementById('badge-community-count');
+            if (badgeAdmin) badgeAdmin.textContent = adminAccounts.filter(a => a.status !== 'sold').length;
+            if (badgeComm) badgeComm.textContent = communityAccounts.filter(a => a.status !== 'sold').length;
+            if (statLiveCount) statLiveCount.textContent = allAccounts.length;
+
+            const currentTabAccounts = activeCatalogTab === 'admin' ? adminAccounts : communityAccounts;
+            const availableCount = currentTabAccounts.filter(a => a.status !== 'sold').length;
+            accountCount.textContent = availableCount;
+
+            if (currentTabAccounts.length === 0) {
+                accountsGrid.classList.add('hidden');
+                emptyFilterState.classList.add('hidden');
+                renderEmptyTabState();
+                emptyCatalogState.classList.remove('hidden');
+                return;
+            }
+
+            emptyCatalogState.classList.add('hidden');
+
+            const filtered = currentTabAccounts.filter(acc => {
+                const evosText = Array.isArray(acc.evos) ? acc.evos.join(' ').toLowerCase() : '';
+                const matchesSearch = !query ||
+                    (acc.title && acc.title.toLowerCase().includes(query)) ||
+                    (acc.code && acc.code.toLowerCase().includes(query)) ||
+                    (acc.description && acc.description.toLowerCase().includes(query)) ||
+                    evosText.includes(query);
+
+                const matchesRank = selectedRank === 'all' || acc.rank === selectedRank;
+                const matchesRegion = selectedRegion === 'all' || acc.region === selectedRegion;
+
+                return matchesSearch && matchesRank && matchesRegion;
+            });
+
+            if (filtered.length === 0) {
+                accountsGrid.classList.add('hidden');
+                emptyFilterState.classList.remove('hidden');
+            } else {
+                emptyFilterState.classList.add('hidden');
+                accountsGrid.classList.remove('hidden');
+                accountsGrid.classList.add('grid');
+                renderAccountCards(filtered);
+            }
+        }
+
+        function renderEmptyTabState() {
+            const iconBox = document.getElementById('empty-icon-box');
+            const titleEl = document.getElementById('empty-title');
+            const descEl = document.getElementById('empty-desc');
+            const actionsEl = document.getElementById('empty-actions');
+
+            if (activeCatalogTab === 'admin') {
+                iconBox.className = "w-20 h-20 rounded-2xl bg-gradient-to-br from-ffcyan/20 to-blue-500/20 border border-ffcyan/40 text-ffcyan flex items-center justify-center text-4xl mx-auto mb-5 shadow-neon-cyan";
+                iconBox.innerHTML = `<i class="fa-solid fa-crown"></i>`;
+                titleEl.textContent = "No hay cuentas disponibles por ahora";
+                descEl.textContent = "En esta sección se publican exclusivamente las cuentas oficiales para compra directa por Pago Móvil.";
+                actionsEl.innerHTML = `
+                    <button type="button" onclick="openPublishModal(true)" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-ffcyan to-blue-500 text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-cyan inline-flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-plus-circle text-lg"></i> Publicar Cuenta Oficial
+                    </button>
+                    <button type="button" onclick="switchCatalogTab('community')" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-ffcard hover:bg-gray-800 text-ffgold border border-ffgold/40 font-bold text-sm transition-all inline-flex items-center justify-center gap-2">
+                        Ver Catálogo Comunidad
+                    </button>`;
+            } else {
+                iconBox.className = "w-24 h-24 rounded-2xl bg-gradient-to-br from-[#f8f6f0] to-[#e6e2d6] border-2 border-ffgold/60 text-[#12161d] flex items-center justify-center mx-auto mb-5 shadow-neon-gold p-2";
+                iconBox.innerHTML = `<svg viewBox="0 0 120 120" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Darkcode"><circle cx="60" cy="60" r="51" stroke="currentColor" stroke-width="6.5"/><path d="M44 33 L40 21 L51 26.5 L60 16.5 L69 26.5 L80 21 L76 33 Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M60 31.5C41.5 31.5 31 43.5 31 58.5C31 66.2 34.2 71.5 38.8 74.5C39.8 75.2 40.5 76.2 40.5 77.5V86.5C40.5 91.5 44.5 95 49.5 95H70.5C75.5 95 79.5 91.5 79.5 86.5V77.5C79.5 76.2 80.2 75.2 81.2 74.5C85.8 71.5 89 66.2 89 58.5C89 43.5 78.5 31.5 60 31.5Z" stroke="currentColor" stroke-width="6.2" stroke-linejoin="round"/><path d="M40.5 47.5C43 42.2 48.2 38.8 54.5 38.2" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/><ellipse cx="47.2" cy="63" rx="6.2" ry="7.2" transform="rotate(-10 47.2 63)" fill="currentColor"/><ellipse cx="72.8" cy="63" rx="6.2" ry="7.2" transform="rotate(10 72.8 63)" fill="currentColor"/><path d="M60 69.5C58.6 69.5 55.5 75.2 55.8 76.8C56.1 78.2 58.5 77.6 60 77.6C61.5 77.6 63.9 78.2 64.2 76.8C64.5 75.2 61.4 69.5 60 69.5Z" fill="currentColor"/><path d="M49.5 86.5V94.5M60 86.5V94.5M70.5 86.5V94.5" stroke="currentColor" stroke-width="4.8" stroke-linecap="round"/></svg>`;
+                titleEl.textContent = "El catálogo comunitario está listo";
+                descEl.textContent = "Publica las fotos, información y tu número de WhatsApp para hablar directamente con compradores (comisión única de $2 USD).";
+                actionsEl.innerHTML = `
+                    <button type="button" onclick="openPublishModal(false)" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-ffgold to-fforange text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-gold inline-flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-plus-circle text-lg"></i> Publicar Cuenta ($2 USD)
+                    </button>`;
+            }
+        }
+
+        // Renderizar tarjetas de cuentas
+        function renderAccountCards(list) {
+            accountsGrid.innerHTML = '';
+
+            list.forEach(acc => {
+                const theme = bannerThemes[acc.bannerTheme] || bannerThemes.gold;
+                const rBadge = rankBadges[acc.rank] || rankBadges["Heroico"];
+                const shortId = escapeHTML(acc.code || acc.docId.slice(0, 6).toUpperCase());
+                const isSold = acc.status === 'sold';
+                const isAdminItem = acc.isAdminStore === true;
+                const canManage = isAdminAuthenticated || (currentUser && acc.ownerId === currentUser.uid && !isAdminItem);
+                const evosList = Array.isArray(acc.evos) ? acc.evos : [];
+                const sellerWaLink = !isAdminItem ? buildSellerWhatsAppLink(acc) : '';
+                const extraPhotosCount = Array.isArray(acc.galleryPhotos) ? acc.galleryPhotos.length : 0;
+
+                const card = document.createElement('div');
+                card.className = `bg-ffcard rounded-2xl border ${isSold ? 'border-gray-800 opacity-75' : (isAdminItem ? 'border-ffcyan/40 hover:border-ffcyan hover:shadow-neon-cyan' : 'border-gray-800 hover:border-ffgold/70 hover:shadow-neon-gold')} transition-all duration-300 flex flex-col justify-between overflow-hidden group`;
+
+                const primaryPhoto = acc.photoBase64 || acc.imageUrl;
+                const hasCustomImg = primaryPhoto && (primaryPhoto.startsWith('http') || primaryPhoto.startsWith('data:image/'));
+                const headerBgHtml = hasCustomImg
+                    ? `<img src="${escapeHTML(primaryPhoto)}" alt="${escapeHTML(acc.title)}" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:scale-105 transition-transform duration-500">
+                       <div class="absolute inset-0 bg-gradient-to-t from-ffcard via-ffcard/65 to-black/35"></div>`
+                    : `<div class="absolute inset-0 bg-gradient-to-br ${theme.gradient}"></div>`;
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Cabecera Visual de la Tarjeta -->
+                        <div class="relative h-48 p-5 flex flex-col justify-between border-b border-gray-800/80 overflow-hidden">
+                            ${headerBgHtml}
+                            <div class="relative z-10 flex items-center justify-between gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border text-xs font-tech font-bold uppercase tracking-wider backdrop-blur-md ${rBadge.color}">
+                                    <i class="fa-solid ${rBadge.icon}"></i> ${escapeHTML(acc.rank)}
+                                </span>
+
+                                <div class="flex items-center gap-1.5">
+                                    ${extraPhotosCount > 0 ? `<span class="px-2 py-1 rounded-lg bg-ffdark/85 text-white text-[10px] font-bold border border-gray-700"><i class="fa-solid fa-images text-ffcyan mr-1"></i>+${extraPhotosCount}</span>` : ''}
+                                    ${isAdminItem
+                                        ? `<span class="px-2.5 py-1 rounded-lg bg-ffcyan/20 text-ffcyan text-[10px] font-extrabold border border-ffcyan/50 uppercase"><i class="fa-solid fa-crown mr-1"></i>Oficial</span>`
+                                        : `<span class="px-2.5 py-1 rounded-lg bg-ffgold/20 text-ffgold text-[10px] font-bold border border-ffgold/40">Comunidad</span>`
+                                    }
+                                    ${isSold
+                                        ? `<span class="px-2.5 py-1 rounded-lg bg-rose-600 text-white font-extrabold text-[11px] uppercase">VENDIDA</span>`
+                                        : `<span class="px-2.5 py-1 rounded-lg bg-ffdark/85 text-gray-300 font-mono text-xs border border-gray-700">#${shortId}</span>`
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="relative z-10 flex items-end justify-between gap-3">
+                                <div class="min-w-0">
+                                    <span class="text-xs font-tech font-bold text-ffcyan uppercase tracking-wider">
+                                        ${escapeHTML(acc.region)} • ${escapeHTML(acc.bind)}
+                                    </span>
+                                    <h3 class="font-gamer font-bold text-lg text-white leading-snug truncate group-hover:text-ffcyan transition-colors">
+                                        ${escapeHTML(acc.title)}
+                                    </h3>
+                                </div>
+                                <div class="w-10 h-10 rounded-xl bg-ffdark/90 border border-gray-700/80 flex items-center justify-center ${theme.accent} text-lg shrink-0">
+                                    <i class="fa-solid ${theme.icon}"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Métricas de Perfil -->
+                        <div class="p-5">
+                            <div class="grid grid-cols-3 gap-2 bg-ffdark p-3 rounded-xl border border-gray-800/90 mb-4 text-center">
+                                <div>
+                                    <span class="block text-[10px] font-tech uppercase tracking-wider text-gray-400">Nivel</span>
+                                    <span class="font-gamer font-bold text-base sm:text-lg text-white">Nvl ${escapeHTML(acc.level)}</span>
+                                </div>
+                                <div class="border-x border-gray-800">
+                                    <span class="block text-[10px] font-tech uppercase tracking-wider text-gray-400">Pases Élites</span>
+                                    <span class="font-gamer font-bold text-base sm:text-lg text-ffcyan">${escapeHTML(acc.elitePasses)}</span>
+                                </div>
+                                <div>
+                                    <span class="block text-[10px] font-tech uppercase tracking-wider text-gray-400">Acceso</span>
+                                    <span class="font-gamer font-bold text-xs sm:text-sm text-ffgold">${escapeHTML(acc.bind)}</span>
+                                </div>
+                            </div>
+
+                            <!-- Armas Evolutivas / Skins -->
+                            <div>
+                                <span class="block text-xs font-tech font-bold text-gray-400 uppercase tracking-wider mb-2">
+                                    <i class="fa-solid fa-gun text-fforange mr-1"></i> Evolutivas y Skins:
+                                </span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${evosList.slice(0, 3).map(evo => `
+                                        <span class="text-xs bg-ffsurface text-gray-200 px-2.5 py-1 rounded-lg border border-gray-700/80">
+                                            ${escapeHTML(evo)}
+                                        </span>
+                                    `).join('')}
+                                    ${evosList.length > 3 ? `<span class="text-xs text-ffcyan font-semibold px-2 py-1">+${evosList.length - 3} más</span>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie de Tarjeta: Precio y Acciones -->
+                    <div class="px-5 pb-5 pt-3 border-t border-gray-800/70 mt-auto">
+                        <div class="flex items-center justify-between mb-3.5">
+                            <div>
+                                <span class="block text-[11px] font-tech uppercase tracking-wider text-gray-400">Precio</span>
+                                <span class="font-gamer font-extrabold text-2xl sm:text-3xl text-white">$${escapeHTML(acc.price)} <span class="text-xs font-sans font-bold text-ffgold">USD</span></span>
+                            </div>
+                            <button type="button" onclick="openAccountDetail('${acc.docId}')" class="px-3.5 py-2 rounded-xl bg-ffsurface hover:bg-gray-700 text-gray-200 text-xs font-bold border border-gray-700 transition-colors flex items-center gap-1.5">
+                                <i class="fa-solid fa-eye text-ffcyan"></i> Ver Fotos e Info
+                            </button>
+                        </div>
+
+                        ${isSold
+                            ? `<button type="button" disabled class="w-full py-3 rounded-xl bg-gray-800 text-gray-500 font-bold text-sm cursor-not-allowed flex items-center justify-center gap-2">
+                                   <i class="fa-solid fa-lock"></i> Cuenta Vendida
+                               </button>`
+                            : `<div class="space-y-2">
+                                   ${sellerWaLink ? `
+                                       <a href="${sellerWaLink}" target="_blank" rel="noopener noreferrer"
+                                          class="w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-ffdark font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-neon-emerald">
+                                           <i class="fa-brands fa-whatsapp text-lg"></i> Hablar con el Vendedor (${escapeHTML(acc.sellerWhatsapp)})
+                                       </a>
+                                   ` : ''}
+                                   <button type="button" onclick="openCheckoutModal('${acc.docId}')" 
+                                           class="w-full py-3 px-4 rounded-xl ${isAdminItem ? 'bg-gradient-to-r from-emerald-500 to-teal-400 text-ffdark font-gamer font-extrabold shadow-neon-emerald' : 'bg-ffdark hover:bg-ffcyan/15 text-ffcyan border border-ffcyan/50 font-bold'} text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+                                       <i class="fa-solid fa-cart-shopping"></i> Comprar Cuenta (Pago Móvil)
+                                   </button>
+                                   ${canManage ? `
+                                       <div class="flex gap-2 pt-1">
+                                           <button type="button" onclick="promptMarkSold('${acc.docId}')" class="flex-1 py-1.5 rounded-lg bg-ffgold/15 text-ffgold border border-ffgold/40 text-[11px] font-bold hover:bg-ffgold hover:text-ffdark transition-colors">
+                                               Marcar Vendida
+                                           </button>
+                                           <button type="button" onclick="promptDeleteAccount('${acc.docId}')" class="flex-1 py-1.5 rounded-lg bg-rose-500/15 text-rose-400 border border-rose-500/40 text-[11px] font-bold hover:bg-rose-500 hover:text-white transition-colors">
+                                               Eliminar
+                                           </button>
+                                       </div>
+                                   ` : ''}
+                               </div>`
+                        }
+                    </div>
+                `;
+
+                accountsGrid.appendChild(card);
+            });
+        }
+
+        // =========================================================================
+        // FLUJO DE COMPRA + PAGO MÓVIL + CAPTURA + VERIFICADOR + CONFIRMAR PAGO
+        // =========================================================================
+        window.openCheckoutModal = function(docId) {
+            const acc = allAccounts.find(a => a.docId === docId);
+            if (!acc) return;
+
+            selectedCheckoutAccount = acc;
+            const shortId = escapeHTML(acc.code || acc.docId.slice(0, 6).toUpperCase());
+
+            document.getElementById('checkout-subtitle').textContent = acc.isAdminStore
+                ? "Compra Directa con el Administrador • Pago Móvil"
+                : "Compra Protegida en Catálogo • Pago Móvil";
+
+            document.getElementById('checkout-account-summary').innerHTML = `
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="px-2 py-0.5 rounded bg-ffcyan/15 text-ffcyan font-mono text-xs font-bold">#${shortId}</span>
+                        <span class="text-xs text-gray-400">${escapeHTML(acc.rank)} • Nvl ${escapeHTML(acc.level)}</span>
+                    </div>
+                    <h4 class="font-gamer font-bold text-sm sm:text-base text-white">${escapeHTML(acc.title)}</h4>
+                </div>
+                <div class="text-left sm:text-right shrink-0">
+                    <span class="block text-[10px] font-tech uppercase text-gray-400">Total a Pagar</span>
+                    <span class="font-gamer font-extrabold text-2xl text-ffgold">$${escapeHTML(acc.price)} USD</span>
+                </div>
+            `;
+
+            // Resetear formulario y vistas previas
+            document.getElementById('checkout-payment-form').reset();
+            document.getElementById('checkout-payment-form').classList.remove('hidden');
+            document.getElementById('checkout-confirmed-ticket').classList.add('hidden');
+            document.getElementById('checkout-preview-box').classList.add('hidden');
+            validatePaymentVerifier('checkout');
+            renderPagoMovilFields();
+
+            const modal = document.getElementById('checkout-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeCheckoutModal = function() {
+            const modal = document.getElementById('checkout-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        };
+
+        // Vista previa de imagen de captura
+        window.handleScreenshotPreview = function(inputEl, boxId, imgId) {
+            const box = document.getElementById(boxId);
+            const img = document.getElementById(imgId);
+            if (inputEl.files && inputEl.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    img.src = e.target.result;
+                    box.classList.remove('hidden');
+                    if (boxId.startsWith('checkout')) {
+                        validatePaymentVerifier('checkout');
+                    }
+                };
+                reader.readAsDataURL(inputEl.files[0]);
+            } else {
+                box.classList.add('hidden');
+            }
+        };
+
+        // Verificador en tiempo real del comprobante
+        window.validatePaymentVerifier = function(prefix) {
+            const fileInput = document.getElementById(`${prefix}-screenshot`);
+            const refInput = document.getElementById(`${prefix}-ref`);
+            const phoneInput = document.getElementById(`${prefix}-buyer-phone`);
+            const badge = document.getElementById(`${prefix}-verifier-badge`);
+            const statusBox = document.getElementById(`${prefix}-verifier-status`);
+
+            const hasFile = fileInput && fileInput.files && fileInput.files.length > 0;
+            const refVal = refInput ? refInput.value.trim() : '';
+            const phoneVal = phoneInput ? phoneInput.value.trim() : '';
+            const isRefValid = /^[0-9]{4,12}$/.test(refVal);
+            const isPhoneValid = phoneVal.length >= 7;
+
+            if (hasFile && isRefValid && isPhoneValid) {
+                badge.className = "text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40";
+                badge.innerHTML = `<i class="fa-solid fa-check-circle mr-1"></i> Listo para Confirmar`;
+                statusBox.className = "p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/40 text-xs text-emerald-300 flex items-center gap-2.5";
+                statusBox.innerHTML = `<i class="fa-solid fa-shield-check text-emerald-400 text-base"></i> <span>Captura adjunta y referencia <strong>#${escapeHTML(refVal)}</strong> verificadas. Pulsa <strong>Confirmar Pago</strong>.</span>`;
+                return true;
+            } else {
+                badge.className = "text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-ffgold/15 text-ffgold border border-ffgold/30";
+                badge.textContent = "Verificación Pendiente";
+                statusBox.className = "p-3 rounded-xl bg-ffcard/80 border border-gray-800 text-xs text-gray-400 flex items-center gap-2.5";
+                statusBox.innerHTML = `<i class="fa-solid fa-circle-info text-ffcyan"></i> <span>Completa: ${!hasFile ? 'Subir captura, ' : ''}${!isRefValid ? 'Referencia numérica (4-12 dígitos), ' : ''}${!isPhoneValid ? 'Tu teléfono' : ''}.</span>`;
+                return false;
+            }
+        };
+
+        // Enviar y Confirmar Pago en Checkout
+        document.getElementById('checkout-payment-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (!selectedCheckoutAccount) return;
+
+            const isValid = validatePaymentVerifier('checkout');
+            if (!isValid) {
+                showToast("Por favor adjunta la captura y completa los datos del verificador.");
+                return;
+            }
+
+            const confirmBtn = document.getElementById('checkout-confirm-btn');
+            confirmBtn.disabled = true;
+            confirmBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Verificando y Confirmando...`;
+
+            try {
+                const refNumber = document.getElementById('checkout-ref').value.trim();
+                const buyerPhone = document.getElementById('checkout-buyer-phone').value.trim();
+                const fileName = document.getElementById('checkout-screenshot').files[0]?.name || 'captura_pago.jpg';
+                const shortId = selectedCheckoutAccount.code || selectedCheckoutAccount.docId.slice(0, 6).toUpperCase();
+
+                if (db && currentUser) {
+                    const reportsRef = collection(db, 'artifacts', appId, 'public', 'data', 'ff_payment_reports');
+                    await addDoc(reportsRef, {
+                        type: 'account_purchase',
+                        accountId: selectedCheckoutAccount.docId,
+                        accountCode: shortId,
+                        accountTitle: selectedCheckoutAccount.title,
+                        amountUsd: selectedCheckoutAccount.price,
+                        isAdminStore: !!selectedCheckoutAccount.isAdminStore,
+                        reference: refNumber,
+                        buyerPhone,
+                        screenshotName: fileName,
+                        buyerUid: currentUser.uid,
+                        status: 'verified_by_user',
+                        createdAt: Date.now()
+                    });
+                }
+
+                // Preparar ticket de confirmación y enlaces WhatsApp
+                const waConfirmMsg = `Hola 👋, acabo de *CONFIRMAR MI PAGO MÓVIL* en DARKCODE:\n\n` +
+                                     `🆔 *Código Cuenta:* #${shortId}\n` +
+                                     `🔥 *Cuenta:* ${selectedCheckoutAccount.title}\n` +
+                                     `💵 *Monto:* $${selectedCheckoutAccount.price} USD\n` +
+                                     `🧾 *Referencia Pago Móvil:* #${refNumber}\n` +
+                                     `📱 *Mi Teléfono:* ${buyerPhone}\n` +
+                                     `📎 *Captura adjunta:* ${fileName}\n\n` +
+                                     `Te envío la captura por aquí para concretar la entrega.`;
+
+                document.getElementById('ticket-summary-details').innerHTML = `
+                    <div><strong>Cuenta:</strong> #${escapeHTML(shortId)} - ${escapeHTML(selectedCheckoutAccount.title)}</div>
+                    <div><strong>Monto:</strong> $${escapeHTML(selectedCheckoutAccount.price)} USD</div>
+                    <div><strong>Referencia Verificada:</strong> #${escapeHTML(refNumber)}</div>
+                    <div><strong>Teléfono Comprador:</strong> ${escapeHTML(buyerPhone)}</div>
+                    <div><strong>Captura:</strong> ${escapeHTML(fileName)}</div>
+                `;
+
+                document.getElementById('ticket-wa-1').href = `https://wa.me/${ADMIN_PAGO_MOVIL_WA}?text=${encodeURIComponent(waConfirmMsg)}`;
+                document.getElementById('ticket-wa-1').innerHTML = `<i class="fa-brands fa-whatsapp text-lg"></i> Enviar Comprobante (0414-5047264)`;
+                document.getElementById('ticket-wa-2').href = `https://wa.me/${ADMIN_WHATSAPP_1}?text=${encodeURIComponent(waConfirmMsg)}`;
+                document.getElementById('ticket-wa-2').innerHTML = `<i class="fa-brands fa-whatsapp text-lg"></i> Asesor Línea 1 (0412)`;
+
+                document.getElementById('checkout-payment-form').classList.add('hidden');
+                document.getElementById('checkout-confirmed-ticket').classList.remove('hidden');
+                showToast("¡Pago confirmado! Envía la captura por WhatsApp.");
+            } catch (err) {
+                console.error("Error registrando pago:", err);
+                showToast("Error al confirmar el pago. Intenta nuevamente.");
+            } finally {
+                confirmBtn.disabled = false;
+                confirmBtn.innerHTML = `<i class="fa-solid fa-circle-check text-lg"></i> Confirmar Pago`;
+            }
+        });
+
+        // =========================================================================
+        // COMPRESIÓN DE FOTOS DE CUENTA PARA FIRESTORE (BASE64 LIGERO)
+        // =========================================================================
+        function compressImageToDataURL(file, maxWidth = 800, quality = 0.72) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const img = new Image();
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        let width = img.width;
+                        let height = img.height;
+                        if (width > maxWidth) {
+                            height = Math.round((height * maxWidth) / width);
+                            width = maxWidth;
+                        }
+                        canvas.width = width;
+                        canvas.height = height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0, width, height);
+                        resolve(canvas.toDataURL('image/jpeg', quality));
+                    };
+                    img.onerror = reject;
+                    img.src = event.target.result;
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        window.handleAccountPhotosUpload = async function(inputEl, mode) {
+            if (!inputEl.files || inputEl.files.length === 0) return;
+            try {
+                if (mode === 'main') {
+                    uploadedMainPhotoBase64 = await compressImageToDataURL(inputEl.files[0], 850, 0.75);
+                } else {
+                    const files = Array.from(inputEl.files).slice(0, 2);
+                    const compressed = [];
+                    for (const f of files) {
+                        compressed.push(await compressImageToDataURL(f, 750, 0.7));
+                    }
+                    uploadedGalleryPhotosBase64 = compressed;
+                }
+                renderUploadedAccountPhotosPreview();
+            } catch (err) {
+                console.error("Error procesando foto:", err);
+                showToast("No se pudo procesar la imagen.");
+            }
+        };
+
+        function renderUploadedAccountPhotosPreview() {
+            const box = document.getElementById('pub-uploaded-photos-preview');
+            if (!box) return;
+            const allImgs = [];
+            if (uploadedMainPhotoBase64) allImgs.push({ label: 'Portada', src: uploadedMainPhotoBase64 });
+            uploadedGalleryPhotosBase64.forEach((src, i) => allImgs.push({ label: `Foto ${i + 2}`, src }));
+
+            if (allImgs.length === 0) {
+                box.classList.add('hidden');
+                box.classList.remove('grid');
+                return;
+            }
+
+            box.classList.remove('hidden');
+            box.classList.add('grid');
+            box.innerHTML = allImgs.map(item => `
+                <div class="relative rounded-xl overflow-hidden border border-ffcyan/40 bg-black/50 h-20">
+                    <img src="${item.src}" alt="${item.label}" class="w-full h-full object-cover">
+                    <span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-black/75 text-[10px] font-bold text-ffcyan">${item.label}</span>
+                </div>
+            `).join('');
+        }
+
+        // =========================================================================
+        // PUBLICAR CUENTA (COMUNIDAD $2 USD vs OFICIAL SIN COMISIÓN CON CLAVE 0920)
+        // =========================================================================
+        window.openPublishModal = function(asAdminStore = false) {
+            if (asAdminStore && !isAdminAuthenticated) {
+                openAdminModal();
+                return;
+            }
+
+            document.getElementById('pub-is-admin-store').value = asAdminStore ? 'true' : 'false';
+            uploadedMainPhotoBase64 = "";
+            uploadedGalleryPhotosBase64 = [];
+            renderUploadedAccountPhotosPreview();
+
+            const modalTitle = document.getElementById('pub-modal-title');
+            const modalSubtitle = document.getElementById('pub-modal-subtitle');
+            const adminBanner = document.getElementById('pub-admin-free-banner');
+            const commissionSection = document.getElementById('pub-commission-section');
+            const submitBtn = document.getElementById('publish-submit-btn');
+            const feeFile = document.getElementById('pub-fee-screenshot');
+            const feeRef = document.getElementById('pub-fee-ref');
+            const waWrapper = document.getElementById('pub-whatsapp-wrapper');
+            const waInput = document.getElementById('pub-whatsapp');
+
+            if (asAdminStore) {
+                modalTitle.textContent = "Publicar Cuenta Oficial";
+                modalSubtitle.textContent = "Sección Comprar con el Administrador • Sin Comisión ($0)";
+                adminBanner.classList.remove('hidden');
+                commissionSection.classList.add('hidden');
+                waWrapper.classList.add('hidden');
+                waInput.required = false;
+                feeFile.required = false;
+                feeRef.required = false;
+                submitBtn.className = "w-full py-4 rounded-xl bg-gradient-to-r from-ffcyan to-blue-500 text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-cyan flex items-center justify-center gap-2";
+                submitBtn.innerHTML = `<i class="fa-solid fa-crown"></i> Publicar Cuenta Oficial (Sin Comisión)`;
+            } else {
+                modalTitle.textContent = "Publicar mi Cuenta (Comunidad)";
+                modalSubtitle.textContent = "Comisión única de publicación: $2 USD por Pago Móvil";
+                adminBanner.classList.add('hidden');
+                commissionSection.classList.remove('hidden');
+                waWrapper.classList.remove('hidden');
+                waInput.required = true;
+                feeFile.required = true;
+                feeRef.required = true;
+                submitBtn.className = "w-full py-4 rounded-xl bg-gradient-to-r from-ffgold to-fforange text-ffdark font-gamer font-bold text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-neon-gold flex items-center justify-center gap-2";
+                submitBtn.innerHTML = `<i class="fa-solid fa-rocket"></i> Confirmar Pago ($2) y Publicar Cuenta`;
+            }
+
+            renderPagoMovilFields();
+            const modal = document.getElementById('publish-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closePublishModal = function() {
+            const modal = document.getElementById('publish-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        };
+
+        const publishForm = document.getElementById('publish-form');
+        const publishSubmitBtn = document.getElementById('publish-submit-btn');
+
+        publishForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            if (!currentUser) {
+                showToast("Conectando sesión... intenta de nuevo en un segundo.");
+                return;
+            }
+
+            const isAdminStore = document.getElementById('pub-is-admin-store').value === 'true';
+            if (isAdminStore && !isAdminAuthenticated) {
+                showToast("No autorizado para publicar como Administrador.");
+                return;
+            }
+
+            const feeRef = document.getElementById('pub-fee-ref').value.trim();
+            const feeFile = document.getElementById('pub-fee-screenshot').files[0];
+
+            if (!isAdminStore) {
+                if (!feeFile || !/^[0-9]{4,12}$/.test(feeRef)) {
+                    showToast("Adjunta la captura de la comisión de $2 USD y una referencia válida.");
+                    return;
+                }
+            }
+
+            publishSubmitBtn.disabled = true;
+            publishSubmitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Publicando...`;
+
+            try {
+                const title = document.getElementById('pub-title').value.trim();
+                const price = Number(document.getElementById('pub-price').value);
+                const level = Number(document.getElementById('pub-level').value);
+                const rank = document.getElementById('pub-rank').value;
+                const region = document.getElementById('pub-region').value;
+                const elitePasses = Number(document.getElementById('pub-passes').value);
+                const bind = document.getElementById('pub-bind').value;
+                const sellerWhatsapp = document.getElementById('pub-whatsapp').value.trim();
+                const evosRaw = document.getElementById('pub-evos').value.trim();
+                const description = document.getElementById('pub-desc').value.trim();
+                const imageUrl = document.getElementById('pub-image-url').value.trim();
+                const bannerTheme = document.querySelector('input[name="banner-theme"]:checked')?.value || 'gold';
+
+                const evos = evosRaw.split(',').map(item => item.trim()).filter(Boolean);
+                const code = (isAdminStore ? 'ADM-' : 'DC-') + Math.floor(1000 + Math.random() * 9000);
+
+                const newAccount = {
+                    code,
+                    title,
+                    price,
+                    level,
+                    rank,
+                    region,
+                    elitePasses,
+                    bind,
+                    sellerWhatsapp: isAdminStore ? '' : sellerWhatsapp,
+                    evos,
+                    description,
+                    imageUrl,
+                    photoBase64: uploadedMainPhotoBase64,
+                    galleryPhotos: uploadedGalleryPhotosBase64,
+                    bannerTheme,
+                    isAdminStore,
+                    commissionPaid: isAdminStore ? 0 : 2,
+                    commissionRef: isAdminStore ? 'ADMIN_0920_FREE' : feeRef,
+                    status: 'available',
+                    ownerId: currentUser.uid,
+                    createdAt: Date.now()
+                };
+
+                const accountsRef = collection(db, 'artifacts', appId, 'public', 'data', 'ff_accounts');
+                await addDoc(accountsRef, newAccount);
+
+                // Registrar pago de comisión $2 si es cuenta comunitaria
+                if (!isAdminStore) {
+                    const reportsRef = collection(db, 'artifacts', appId, 'public', 'data', 'ff_payment_reports');
+                    await addDoc(reportsRef, {
+                        type: 'listing_fee_2usd',
+                        accountCode: code,
+                        accountTitle: title,
+                        amountUsd: 2,
+                        reference: feeRef,
+                        buyerPhone: sellerWhatsapp,
+                        screenshotName: feeFile ? feeFile.name : 'comision_2usd.jpg',
+                        buyerUid: currentUser.uid,
+                        status: 'verified_by_user',
+                        createdAt: Date.now()
+                    });
+                }
+
+                const notifyMsg = isAdminStore
+                    ? `Cuenta Oficial publicada en DARKCODE:\n🆔 *Código:* #${code}\n🔥 *Título:* ${title}\n💵 *Precio:* $${price} USD`
+                    : `Hola Asesor de DARKCODE 👋, acabo de pagar la comisión de *$2 USD* y publiqué mi cuenta:\n\n` +
+                      `🆔 *Código:* #${code}\n` +
+                      `🔥 *Título:* ${title}\n` +
+                      `💵 *Precio:* $${price} USD\n` +
+                      `🧾 *Ref. Comisión ($2):* #${feeRef}\n` +
+                      `📱 *Mi WhatsApp:* ${sellerWhatsapp}`;
+
+                document.getElementById('notify-admin1-wa-link').href = `https://wa.me/${ADMIN_WHATSAPP_1}?text=${encodeURIComponent(notifyMsg)}`;
+                document.getElementById('notify-admin2-wa-link').href = `https://wa.me/${ADMIN_WHATSAPP_2}?text=${encodeURIComponent(notifyMsg)}`;
+
+                publishForm.reset();
+                uploadedMainPhotoBase64 = "";
+                uploadedGalleryPhotosBase64 = [];
+                renderUploadedAccountPhotosPreview();
+                document.getElementById('pub-preview-box').classList.add('hidden');
+                closePublishModal();
+
+                switchCatalogTab(isAdminStore ? 'admin' : 'community');
+                openSuccessModal();
+                showToast("¡Cuenta publicada con éxito!");
+            } catch (error) {
+                console.error("Error al publicar cuenta:", error);
+                showToast("Error al publicar. Si subiste fotos muy pesadas, intenta con menos fotos.");
+            } finally {
+                publishSubmitBtn.disabled = false;
+            }
+        });
+
+        // =========================================================================
+        // MODAL DE CLAVE PARA PUBLICAR EN "COMPRAR CON EL ADMINISTRADOR" (0920)
+        // =========================================================================
+        window.openAdminModal = function() {
+            if (isAdminAuthenticated) {
+                openPublishModal(true);
+                return;
+            }
+            document.getElementById('admin-pin-input').value = '';
+            const modal = document.getElementById('admin-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => document.getElementById('admin-pin-input').focus(), 100);
+        };
+
+        window.closeAdminModal = function() {
+            const modal = document.getElementById('admin-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        };
+
+        document.getElementById('admin-login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const pin = document.getElementById('admin-pin-input').value.trim();
+            if (pin === ADMIN_SECRET_KEY) {
+                isAdminAuthenticated = true;
+                document.getElementById('admin-pin-input').value = '';
+                closeAdminModal();
+                openPublishModal(true);
+                showToast("Clave verificada. Publicación sin comisión habilitada.");
+            } else {
+                showToast("Clave incorrecta. Intenta de nuevo.");
+            }
+        });
+
+        // =========================================================================
+        // MODAL DETALLES DE INVENTARIO Y FOTOS DE CUENTA
+        // =========================================================================
+        window.openAccountDetail = function(docId) {
+            const acc = allAccounts.find(a => a.docId === docId);
+            if (!acc) return;
+
+            const theme = bannerThemes[acc.bannerTheme] || bannerThemes.gold;
+            const rBadge = rankBadges[acc.rank] || rankBadges["Heroico"];
+            const shortId = escapeHTML(acc.code || acc.docId.slice(0, 6).toUpperCase());
+            const isSold = acc.status === 'sold';
+            const canManage = isAdminAuthenticated || (currentUser && acc.ownerId === currentUser.uid && !acc.isAdminStore);
+            const sellerWaLink = !acc.isAdminStore ? buildSellerWhatsAppLink(acc) : '';
+            const waBuyLink1 = buildWhatsAppBuyLink(acc, ADMIN_WHATSAPP_1);
+            const waBuyLink2 = buildWhatsAppBuyLink(acc, ADMIN_WHATSAPP_2);
+            const evosList = Array.isArray(acc.evos) ? acc.evos : [];
+
+            const primaryPhoto = acc.photoBase64 || acc.imageUrl;
+            const allPhotos = [];
+            if (primaryPhoto && (primaryPhoto.startsWith('http') || primaryPhoto.startsWith('data:image/'))) {
+                allPhotos.push(primaryPhoto);
+            }
+            if (Array.isArray(acc.galleryPhotos)) {
+                acc.galleryPhotos.forEach(p => {
+                    if (p && p.startsWith('data:image/')) allPhotos.push(p);
+                });
+            }
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="relative p-6 sm:p-8 bg-gradient-to-r ${theme.gradient} border-b border-gray-800 overflow-hidden">
+                    ${allPhotos.length > 0
+                        ? `<img src="${escapeHTML(allPhotos[0])}" alt="" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover opacity-35">`
+                        : ''
+                    }
+                    <div class="relative z-10">
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-3 py-1 rounded-lg bg-ffdark/90 text-ffcyan font-mono text-xs font-bold border border-ffcyan/30">
+                                #${shortId}
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border text-xs font-tech font-bold uppercase ${rBadge.color}">
+                                <i class="fa-solid ${rBadge.icon}"></i> ${escapeHTML(acc.rank)}
+                            </span>
+                            <span class="px-3 py-1 rounded-lg bg-ffdark/90 text-ffgold text-xs font-bold border border-ffgold/30">
+                                ${escapeHTML(acc.region)}
+                            </span>
+                            <span class="px-3 py-1 rounded-lg bg-ffdark/90 text-emerald-400 text-xs font-bold border border-emerald-500/30">
+                                <i class="fa-solid fa-link mr-1"></i> ${escapeHTML(acc.bind)}
+                            </span>
+                        </div>
+                        <h2 class="font-gamer font-bold text-xl sm:text-3xl text-white">${escapeHTML(acc.title)}</h2>
+                    </div>
+                </div>
+
+                <div class="p-6 sm:p-8 space-y-6">
+                    ${allPhotos.length > 0 ? `
+                        <div>
+                            <h4 class="font-gamer font-bold text-sm text-white uppercase mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-images text-ffcyan"></i> Capturas de la Cuenta (${allPhotos.length})
+                            </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-${Math.min(allPhotos.length, 3)} gap-3">
+                                ${allPhotos.map((src, idx) => `
+                                    <div class="rounded-2xl overflow-hidden border border-gray-700 bg-ffdark">
+                                        <img src="${escapeHTML(src)}" alt="Captura ${idx + 1}" class="w-full h-48 object-cover">
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+
+                    <div class="grid grid-cols-3 gap-3 bg-ffdark p-4 rounded-2xl border border-gray-800 text-center">
+                        <div>
+                            <span class="text-xs font-tech uppercase text-gray-400 block">Nivel</span>
+                            <span class="font-gamer font-bold text-xl sm:text-2xl text-white">${escapeHTML(acc.level)}</span>
+                        </div>
+                        <div class="border-x border-gray-800">
+                            <span class="text-xs font-tech uppercase text-gray-400 block">Rango</span>
+                            <span class="font-gamer font-bold text-lg sm:text-xl text-ffgold">${escapeHTML(acc.rank)}</span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-tech uppercase text-gray-400 block">Pases Élites</span>
+                            <span class="font-gamer font-bold text-xl sm:text-2xl text-ffcyan">${escapeHTML(acc.elitePasses)}</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-gamer font-bold text-sm sm:text-base text-white uppercase mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-gun text-fforange"></i> Armas Evolutivas y Skins Destacadas
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${evosList.map(evo => `
+                                <span class="px-3 py-1.5 rounded-xl bg-ffdark border border-gray-700 text-xs sm:text-sm text-gray-200">
+                                    <i class="fa-solid fa-star text-ffgold mr-1.5 text-xs"></i>${escapeHTML(evo)}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-gamer font-bold text-sm sm:text-base text-white uppercase mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-box-open text-ffcyan"></i> Inventario y Detalles
+                        </h4>
+                        <div class="bg-ffdark/70 p-4 rounded-2xl border border-gray-800 text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+                            ${escapeHTML(acc.description)}
+                        </div>
+                    </div>
+
+                    ${sellerWaLink ? `
+                        <div class="bg-emerald-950/30 border border-emerald-500/40 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                            <div>
+                                <span class="block text-xs font-tech font-bold uppercase text-emerald-400">Contacto Directo con el Dueño</span>
+                                <span class="text-sm font-mono font-bold text-white">${escapeHTML(acc.sellerWhatsapp)}</span>
+                            </div>
+                            <a href="${sellerWaLink}" target="_blank" rel="noopener noreferrer"
+                               class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-ffdark font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Hablar Personalmente
+                            </a>
+                        </div>
+                    ` : ''}
+
+                    ${canManage ? `
+                        <div class="bg-ffdark border border-ffcyan/30 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-ffcyan flex items-center gap-2">
+                                <i class="fa-solid fa-sliders"></i> Gestión de publicación:
+                            </span>
+                            <div class="flex items-center gap-2 w-full sm:w-auto">
+                                ${!isSold ? `
+                                    <button type="button" onclick="promptMarkSold('${acc.docId}')" class="flex-1 sm:flex-none px-3.5 py-2 rounded-xl bg-ffgold/15 hover:bg-ffgold text-ffgold hover:text-ffdark border border-ffgold/40 text-xs font-bold transition-colors">
+                                        Marcar Vendida
+                                    </button>
+                                ` : ''}
+                                <button type="button" onclick="promptDeleteAccount('${acc.docId}')" class="flex-1 sm:flex-none px-3.5 py-2 rounded-xl bg-rose-500/15 hover:bg-rose-500 text-rose-400 hover:text-white border border-rose-500/40 text-xs font-bold transition-colors">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    ` : ''}
+
+                    <div class="pt-3 border-t border-gray-800 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-tech uppercase text-gray-400 block">Precio Publicado</span>
+                                <span class="font-gamer font-extrabold text-3xl sm:text-4xl text-white">$${escapeHTML(acc.price)} <span class="text-sm text-ffgold font-sans font-bold">USD</span></span>
+                            </div>
+                            ${isSold ? `<span class="px-6 py-3.5 rounded-xl bg-gray-800 text-gray-400 font-bold text-sm">Cuenta Vendida</span>` : ''}
+                        </div>
+                        ${!isSold ? `
+                            <div class="space-y-2.5">
+                                <button type="button" onclick="closeModal(); openCheckoutModal('${acc.docId}')"
+                                        class="w-full py-4 px-5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 hover:brightness-110 text-ffdark font-gamer font-extrabold text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-neon-emerald">
+                                    <i class="fa-solid fa-cart-shopping text-lg"></i> Comprar Cuenta (Pago Móvil + Verificador)
+                                </button>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                    <a href="${waBuyLink1}" target="_blank" rel="noopener noreferrer" 
+                                       class="py-3 px-4 rounded-xl bg-ffdark hover:bg-emerald-500/15 text-emerald-400 border border-emerald-500/40 font-bold text-xs transition-all flex items-center justify-center gap-2">
+                                        <i class="fa-brands fa-whatsapp text-base"></i> Consultar WhatsApp (0412)
+                                    </a>
+                                    <a href="${waBuyLink2}" target="_blank" rel="noopener noreferrer" 
+                                       class="py-3 px-4 rounded-xl bg-ffdark hover:bg-ffcyan/15 text-ffcyan border border-ffcyan/40 font-bold text-xs transition-all flex items-center justify-center gap-2">
+                                        <i class="fa-brands fa-whatsapp text-base"></i> Consultar WhatsApp (0416)
+                                    </a>
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('account-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Acciones de gestión (Marcar vendida / Eliminar)
+        window.promptMarkSold = function(docId) {
+            document.getElementById('confirm-modal-title').textContent = "¿Marcar cuenta como vendida?";
+            document.getElementById('confirm-modal-text').textContent = "La tarjeta mostrará la etiqueta VENDIDA en el catálogo.";
+            pendingConfirmAction = async () => {
+                try {
+                    const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'ff_accounts', docId);
+                    await updateDoc(docRef, { status: 'sold' });
+                    closeConfirmModal();
+                    closeModal();
+                    showToast("Cuenta marcada como vendida.");
+                } catch (err) {
+                    console.error(err);
+                    showToast("Error al actualizar el estado.");
+                }
+            };
+            openConfirmModal();
+        };
+
+        window.promptDeleteAccount = function(docId) {
+            document.getElementById('confirm-modal-title').textContent = "¿Eliminar esta publicación?";
+            document.getElementById('confirm-modal-text').textContent = "Esta acción quitará la cuenta del catálogo permanentemente.";
+            pendingConfirmAction = async () => {
+                try {
+                    const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'ff_accounts', docId);
+                    await deleteDoc(docRef);
+                    closeConfirmModal();
+                    closeModal();
+                    showToast("Publicación eliminada del catálogo.");
+                } catch (err) {
+                    console.error(err);
+                    showToast("No se pudo eliminar la publicación.");
+                }
+            };
+            openConfirmModal();
+        };
+
+        document.getElementById('confirm-modal-btn').addEventListener('click', () => {
+            if (typeof pendingConfirmAction === 'function') {
+                pendingConfirmAction();
+            }
+        });
+
+        // Controles de Modales y Menús
+        window.openSuccessModal = function() {
+            const modal = document.getElementById('published-success-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        };
+
+        window.closeSuccessModal = function() {
+            const modal = document.getElementById('published-success-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        window.closeModal = function() {
+            const modal = document.getElementById('account-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        };
+
+        window.openConfirmModal = function() {
+            const modal = document.getElementById('confirm-action-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        };
+
+        window.closeConfirmModal = function() {
+            const modal = document.getElementById('confirm-action-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            pendingConfirmAction = null;
+        };
+
+        window.resetFilters = function() {
+            searchInput.value = '';
+            rankFilter.value = 'all';
+            regionFilter.value = 'all';
+            applyFilters();
+        };
+
+        window.toggleNavWaMenu = function(forceState) {
+            const dropdown = document.getElementById('nav-wa-dropdown');
+            if (!dropdown) return;
+            if (typeof forceState === 'boolean') {
+                dropdown.classList.toggle('hidden', !forceState);
+            } else {
+                dropdown.classList.toggle('hidden');
+            }
+        };
+
+        window.toggleFloatingWaMenu = function(forceState) {
+            const menu = document.getElementById('floating-wa-menu');
+            if (!menu) return;
+            if (typeof forceState === 'boolean') {
+                menu.classList.toggle('hidden', !forceState);
+            } else {
+                menu.classList.toggle('hidden');
+            }
+        };
+
+        document.addEventListener('click', (e) => {
+            const navContainer = document.getElementById('nav-wa-container');
+            if (navContainer && !navContainer.contains(e.target)) {
+                window.toggleNavWaMenu(false);
+            }
+            const floatContainer = document.getElementById('floating-wa-container');
+            if (floatContainer && !floatContainer.contains(e.target)) {
+                window.toggleFloatingWaMenu(false);
+            }
+        });
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast-notification');
+            document.getElementById('toast-message').textContent = msg;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3500);
+        }
+
+        ['publish-modal', 'account-modal', 'confirm-action-modal', 'published-success-modal', 'checkout-modal', 'admin-modal'].forEach(id => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.addEventListener('click', (e) => {
+                if (e.target === el) {
+                    el.classList.add('hidden');
+                    el.classList.remove('flex');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        searchInput.addEventListener('input', applyFilters);
+        rankFilter.addEventListener('change', applyFilters);
+        regionFilter.addEventListener('change', applyFilters);
+
+        switchCatalogTab('community');
+        initApp();
+    </script>
+</body>
+</html>
